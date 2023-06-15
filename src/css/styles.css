@@ -4,16 +4,6 @@
   | default @import url()
   |============================
 */
-:root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 
 @import url('./reset.css');
 @import url('./header.css');
@@ -26,3 +16,14 @@ body {
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
