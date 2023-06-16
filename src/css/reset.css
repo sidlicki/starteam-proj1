@@ -95,3 +95,9 @@ img {
     line-height: 1.17;
   }
 }
+
+/*  */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
