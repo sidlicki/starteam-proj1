@@ -2,18 +2,22 @@
 ul {
   list-style: none;
 }
+.products-list img {
+  width: 100%;
+  height: auto;
+}
+
 .products-title {
-  text-align: center;
   margin-bottom: 32px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
+}
+.products-section {
+  padding-bottom: 72px;
+  background-color: #fafafa;
 }
 .products-list {
-  /* display: flex;
-  gap: 18px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
   width: 100%;
   height: 100%;
 }
@@ -26,6 +30,18 @@ ul {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   max-width: 335px;
+  background-color: #fff;
+}
+.products-chocolate-name {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--black-color);
 }
 
 .products-chocolate-describe {
@@ -33,7 +49,56 @@ ul {
 }
 .products-chocolate-type {
   margin-top: 2px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.02em;
+  /* text-transform: uppercase; */
+  color: #111111b3;
 }
 .products-chocolate-btn {
   margin-top: 18px;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black-color);
+
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-title {
+    margin-bottom: 50px;
+  }
+  .products-section {
+    padding-bottom: 100px;
+  }
+
+  .products-item {
+    /* width: calc((100% - 18px) / 2); */
+    padding-top: 32px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-item {
+    /* width: calc((100% - 36px) / 3); */
+  }
 }
