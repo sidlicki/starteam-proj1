@@ -1,1 +1,114 @@
 /* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+.header-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+}
+.header-logo-icon {
+    stroke: var(--orange-color);
+    fill: #FCF1E0;
+}
+.header-logo-text {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: var(--black-color);
+}
+
+.header-mobile-menu-open-btn {
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+}
+.mobile-menu-open-btn-icon {
+    stroke: var(--black-color);
+        fill: transparent;
+}
+@media screen and (min-width: 768px) {
+    .page-header-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .header-mobile-menu-open-btn {
+        width: 32px;
+        height: 32px;
+    }
+    .mobile-menu-open-btn-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .header-mobile-menu-open-btn {
+        display: none;
+    }
+    .page-header-container {
+        padding-bottom: 32px;
+    }
+    .header-logo-icon {
+        width: 24px;
+        height: 24px;
+    }
+    .header-logo-text {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+    .header-navigation-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--black-color);
+    }
+    .header-networks-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    .header-navigation-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    .header-networks-twitter-icon {
+        stroke: var(--black-color);
+        fill: transparent;
+    }
+    .header-networks-instagram-icon {
+        stroke: var(--black-color);
+        fill: transparent;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .header-navigation {
+        display: none;
+    }
+    .header-networks-wrapper {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    
+    
+}
+/* ========== MOBILE MENU ========== */
+    
+
