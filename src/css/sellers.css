@@ -24,6 +24,11 @@ margin-bottom: 32px;
    height: 464px;
    border-radius: 15px;
 }
+.sellers-img {
+max-width: 335px;
+width: 100%;
+border-radius: 15px;
+}
 
 .sellers-list-item-two {
 display: flex;
@@ -84,6 +89,11 @@ margin-bottom: 32px;
     margin-right: 16px;
     border-radius: 15px;
   }
+        .sellers-img {
+            max-width: 100%;
+            width: 344px;
+            height: 464px;
+        }
 
   .sellers-list-item-two {
     order: 3;
@@ -110,7 +120,12 @@ margin-bottom: 32px;
 .sellers-list-item-one {
     min-width: 368px;
     margin-bottom: 32px;
+    border-radius: 15px;
 }
+ .sellers-img {
+     width: 368px;
+     height: 464px;
+ }
 .sellers-list-item-two {
     order: 4;
 }
