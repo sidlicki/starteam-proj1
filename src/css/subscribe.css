@@ -1,1 +1,146 @@
 /* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+/* BACKGROUND-IMAGE */
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/mobile/image.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/mobile/image@2x.png);
+  }
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/tablet/image.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/tablet/image@2x.png);
+  }
+}
+/* DESCTOP */
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/desktop/image.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .subscribe-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/subscribe/desktop/image@2x.png);
+  }
+}
+
+/* MAIM */
+.subscribe-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subscribe-container {
+  width: auto;
+  height: 370px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+.subscribe-opn-btn {
+  width: 128px;
+  height: 41px;
+  background: #fd9222;
+  color: #ffffff;
+  border-radius: 100px;
+  border-color: transparent;
+  margin-top: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe-main-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-top: 24px;
+  width: 326px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe-title {
+  width: 291px;
+  margin: auto;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .subscribe-main-text {
+    width: 467px;
+  }
+}
+
+/* ---MODAL FORM---- */
+.subscribe-modal {
+  position: relative;
+  width: 311px;
+  height: 350px;
+  background: #fafafa;
+  border-radius: 15px;
+}
+.subscribe-modal-cls-btn {
+  display: block;
+  color: #111111;
+}
+.subscribe-form-btn {
+  width: 100px;
+  height: 45px;
+  left: 163px;
+  top: 0px;
+  color: #ffffff;
+  background: #fd9222;
+  border-radius: 100px;
+  border-color: transparent;
+}
+.subscribe-form-email-input {
+  width: 263px;
+  height: 45px;
+  border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.subscribe-frm-text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+}
+.sub-frm-span {
+  color: #fd9222;
+}

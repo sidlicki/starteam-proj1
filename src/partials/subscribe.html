@@ -1,9 +1,45 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -subscribe, щоб уникнути дублювання стилів -->
-<section class="subscribe-section">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
-        <!-- починай писати свій код під цією лінією -->
+<section class="subscribe-section" id="subscribe">
+  <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
+  <div class="container subscribe-container">
+    <!-- починай писати свій код під цією лінією -->
+    <h2 class="section-title-on-dark subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-main-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+      indulgence that will leave you craving more. Made with only the finest ingredients and
+      handcrafted with the utmost care, each piece is a work of art that is sure to please.
+    </p>
+    <button class="js-open-modal subscribe-opn-btn" data-modal="3">Subscribe</button>
+    <!-- твій код має бути вище цієї лінії -->
+  </div>
 
-        <!-- твій код має бути вище цієї лінії -->
+  <!-- MODAL -->
+  <div class="overlay js-overlay-modal">
+    <div class="modal subscribe-modal" data-modal="3">
+      <!--  клас який потрібно накинути для Svg іконки для закриття вікна  -->
+      <svg class="js-modal-close subscribe-modal-cls-btn">
+        <use href="/img/svg/sprite.svg#icon-close"></use>
+      </svg>
+
+      <form>
+        <img src="./img/subscribe/mobile/pop-up.png" alt="" />
+        <label>
+          <p class="subscribe-frm-text">
+            Explore our
+            <span class="sub-frm-span">new chocolate</span> first!
+          </p>
+        </label>
+        <input
+          id="user-email"
+          class="subscribe-form-email-input"
+          type="email"
+          name="user_mail"
+          required
+          pattern="[A-Z,a-z][@][.com]"
+          placeholder="Enter your email"
+        />
+        <button type="submit" class="subscribe-form-btn">Subscribe</button>
+      </form>
     </div>
+  </div>
 </section>
