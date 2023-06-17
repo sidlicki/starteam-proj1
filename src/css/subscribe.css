@@ -100,7 +100,8 @@
 
 /* ---MODAL FORM---- */
 .subscribe-modal {
-  position: relative;
+  position: fixed;
+  /* position: relative; */
   width: 311px;
   height: 350px;
   background: #fafafa;
@@ -108,7 +109,17 @@
 }
 .subscribe-modal-cls-btn {
   display: block;
-  color: #111111;
+  stroke: #ffffff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
 }
 .subscribe-form-btn {
   width: 100px;
@@ -131,6 +142,8 @@
   line-height: 17px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+  border-color: #fafafa;
+  margin-top: 24px;
 }
 .subscribe-frm-text {
   font-family: 'Montserrat';
@@ -140,6 +153,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 32px;
 }
 .sub-frm-span {
   color: #fd9222;
