@@ -16,7 +16,6 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
-@import url('./modals.css');
 
 :root {
   --black-color: #111111;
@@ -31,5 +30,4 @@
 }
 body {
   font-family: var(--main-font-family);
-  background-color: #e2e2e2;
 }
