@@ -11,7 +11,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 14px;
 }
 
@@ -20,7 +20,7 @@
     font-size: 28px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
     max-width: 300px;
     margin-bottom: 32px;
 }
@@ -34,7 +34,7 @@
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
 }
 
@@ -64,7 +64,7 @@
 
 .footer-svg {
     fill: transparent;
-    stroke: #FFFFFF;
+    stroke: var(--white-color);
 }
 
 .icons-footer {
