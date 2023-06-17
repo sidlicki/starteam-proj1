@@ -1,1 +1,94 @@
-/* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+.advantages-section {
+  background-color: var(--dark-purple-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantages-item {
+}
+.advantages-svg-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.advantages-icon {
+  fill: var(--orange-color);
+  width: 32px;
+  height: 32px;
+}
+.advantages-text-field {
+  margin-top: 22px;
+  max-width: 308px;
+}
+.advantages-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: var(--white-color);
+
+  margin-bottom: 18px;
+}
+.advantages-card-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+.advantages-item:nth-child(1) .advantages-card-description,
+.advantages-item:nth-child(3) .advantages-card-description {
+  padding-bottom: 18px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .advantages-item {
+    max-width: unset;
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .advantages-item:nth-child(3) .advantages-card-description {
+    padding-bottom: 35px;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    width: 1100px;
+    gap: 70px;
+  }
+  .advantages-item {
+    flex-basis: calc((100% - 140px) / 3);
+    position: relative;
+  }
+
+  .advantages-item:nth-child(1)::after,
+  .advantages-item:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 0px;
+    height: 124px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6px;
+  }
+}
