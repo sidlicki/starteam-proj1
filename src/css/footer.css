@@ -1,1 +1,145 @@
 /* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+.footer {
+    background-color: var(--dark-purple-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+.text-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.footer-header {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin-bottom: 32px;
+}
+
+.footer-header-span {
+    color: var(--orange-color);
+}
+
+.contact-footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-tel-footer {
+    margin-bottom: 4px;
+}
+
+.navigation-footer-page {
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-svg {
+    fill: transparent;
+    stroke: #FFFFFF;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 14px;
+}
+
+.icon-footer-link {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.icon-footer-list {
+    width: 22px;
+    height: 22px;
+
+
+}
+
+.icons-footer-div {
+    margin-left: auto;
+}
+
+.wrapper-footer {
+    display: flex;
+}
+
+
+.footer-page-wrapper {
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-page-wrapper {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .footer-left {
+        margin-right: 124px;
+    }
+
+    .footer-contact {
+        margin-right: 50px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .navigation-footer-page {
+        padding-top: 24px;
+    }
+
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-left {
+        margin-right: 543px;
+    }
+
+    .footer-contact {
+        margin-right: 63px;
+    }
+
+    .footer-page-wrapper {
+        margin-bottom: 58px;
+    }
+}
