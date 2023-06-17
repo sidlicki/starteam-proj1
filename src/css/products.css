@@ -14,7 +14,6 @@
 }
 .products-section {
   padding-bottom: 72px;
-  background-color: #fafafa;
 }
 
 .products-item {
@@ -26,6 +25,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   max-width: 335px;
+  background: #ffffff;
 }
 .products-chocolate-name {
   font-style: normal;
