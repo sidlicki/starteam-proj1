@@ -67,6 +67,11 @@
     stroke: var(--white-color);
 }
 
+.footer-svg:hover,
+.footer-svg:focus {
+    stroke: var(--orange-color);
+}
+
 .icons-footer {
     display: flex;
     gap: 14px;
