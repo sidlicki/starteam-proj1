@@ -33,7 +33,7 @@
         </picture>
 
         <iframe
-          class="video"
+          class="video hidden"
           id="made_video"
           width=""
           height=""
@@ -42,19 +42,14 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        >
+        </iframe>
 
-        <div class="play-btn">
-          <svg
-            class="play-btn-icon"
-            id="icon-play"
-            aria-label="button`s icon"
-            width="14"
-            height="15"
-          >
+        <button type="button" id="button-play-video" class="play-btn">
+          <svg class="play-btn-icon" aria-label="button`s icon" width="14" height="15">
             <use class="icon-play" href="/img/svg/sprite.svg#icon-play"></use>
           </svg>
-        </div>
+        </button>
       </div>
 
       <div class="made-section-description">
