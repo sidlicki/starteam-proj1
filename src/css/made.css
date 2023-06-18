@@ -49,6 +49,15 @@
     fill:#F5F4F4;
 }
 
+.play-btn:hover,
+.play-btn:focus {
+    border-color: var(--orange-color);
+}
+
+.play-btn:hover .icon-play,
+.play-btn:focus> .icon-play{
+    fill: var(--orange-color);
+}
 
 .made-section-description{
     padding-top: 20px;
@@ -59,7 +68,6 @@
     border-radius: 15px;
     
 }
-
 .made-title-second{
     font-weight: 600;
     font-size: 18px;
