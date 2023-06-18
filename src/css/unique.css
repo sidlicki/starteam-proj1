@@ -106,8 +106,40 @@
     width: 100%;
     height: 270px;
     position: relative;
+    perspective: 1000px; /* flip === Remove this if you don't want the 3D effect */
+}
+/*  ========================== flip card ================== */
+.unique-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.unique-ingredients-item:hover .unique-flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.unique-ingredients-item-face,
+.unique-ingredients-item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.unique-ingredients-item-back {
+    transform: rotateY(180deg);
+}
+/*  ========================== flip card end ================== */
+                        
 @media screen and (min-width:768px) {
     .unique-ingredients-item {
         flex-basis: calc((100% - 1*32px) / 2);
@@ -139,17 +171,20 @@
     text-transform: uppercase;
 }
 
-.unique-sweet-chocolate>.unique-ingredients-item-face,
-.unique-milk>.unique-ingredients-item-face {
+.unique-sweet-chocolate>.unique-flip-card-inner,
+.unique-milk>.unique-flip-card-inner {
     border: 1px solid var(--orange-color);
 }
+.unique-flip-card-inner:hover {
+    border: none;
+}
 
-.unique-milk-chocolate>.unique-ingredients-item-face {
+.unique-milk-chocolate>.unique-flip-card-inner {
     background-color: var(--orange-color);
     color: #FFFFFF;
 }
 
-.unique-nuts>.unique-ingredients-item-face {
+.unique-nuts>.unique-flip-card-inner {
     background-color: var(--dark-purple-color);
     color: #FFFFFF;
 }
@@ -169,7 +204,8 @@
 }
 
 /* =================== Background-images =========== */
-.unique-ingredients-item-face {
+/* .unique-ingredients-item-face */
+.unique-flip-card-inner {
     background-repeat: no-repeat;
     background-position: right 50% top 28px;
     background-size: 224px 171px;
@@ -177,19 +213,19 @@
 
 /* mobile & tablet */
 @media screen and (max-width:1199px) {
-    .unique-milk-chocolate>.unique-ingredients-item-face {
+    .unique-milk-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/chocolate.png);
     }
 
-    .unique-milk>.unique-ingredients-item-face {
+    .unique-milk>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/milk.png);
     }
 
-    .unique-nuts>.unique-ingredients-item-face {
+    .unique-nuts>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/hazelnuts.png);
     }
 
-    .unique-sweet-chocolate>.unique-ingredients-item-face {
+    .unique-sweet-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/cocoa.png);
     }
 }
@@ -197,43 +233,43 @@
 @media screen and (min-device-pixel-ratio:2) and (max-width:1199px),
 screen and (min-resolution:192dpi) and (max-width:1119px),
 screen and (min-resolution:2dppx) and (max-width:1199px) {
-    .unique-milk-chocolate>.unique-ingredients-item-face {
+    .unique-milk-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/chocolate@2x.png);
     }
 
-    .unique-milk>.unique-ingredients-item-face {
+    .unique-milk>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/milk@2x.png);
     }
 
-    .unique-nuts>.unique-ingredients-item-face {
+    .unique-nuts>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/hazelnuts@2x.png);
     }
 
-    .unique-sweet-chocolate>.unique-ingredients-item-face {
+    .unique-sweet-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/mobile-tablet/cocoa@2x.png);
     }
 }
 
 /* desctop */
 @media screen and (min-width: 1200px) {
-    .unique-ingredients-item-face {
+    .unique-flip-card-inner {
         background-position: right 28px top 28px;
         background-size: 206px 160px;
     }
 
-    .unique-milk-chocolate>.unique-ingredients-item-face {
+    .unique-milk-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/chocolate.png);
     }
 
-    .unique-milk>.unique-ingredients-item-face {
+    .unique-milk>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/milk.png);
     }
 
-    .unique-nuts>.unique-ingredients-item-face {
+    .unique-nuts>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/hazelnuts.png);
     }
 
-    .unique-sweet-chocolate>.unique-ingredients-item-face {
+    .unique-sweet-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/cocoa.png);
     }
 }
@@ -241,19 +277,19 @@ screen and (min-resolution:2dppx) and (max-width:1199px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
 screen and (min-resolution: 192dpi) and (min-width:1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {
-    .unique-milk-chocolate>.unique-ingredients-item-face {
+    .unique-milk-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/chocolate@2x.png)
     }
 
-    .unique-milk>.unique-ingredients-item-face {
+    .unique-milk>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/milk@2x.png);
     }
 
-    .unique-nuts>.unique-ingredients-item-face {
+    .unique-nuts>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/hazelnuts@2x.png);
     }
 
-    .unique-sweet-chocolate>.unique-ingredients-item-face {
+    .unique-sweet-chocolate>.unique-flip-card-inner {
         background-image: url(/img/unique/desktop/cocoa@2x.png);
     }
 }
@@ -267,14 +303,16 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     padding: 28px;
     background-color: var(--white-color);
     border-radius: 14px;
-    transform: rotateY(-90deg);
+    border: none;
+    color: var(--black-color);
+    /* transform: rotateY(-90deg);
     transition: transform 0.5s;
-    transform-origin: right;
+    transform-origin: right; */
 }
 
-.unique-ingredients-item:hover .unique-ingredients-item-back {
+/* .unique-ingredients-item:hover .unique-ingredients-item-back {
     transform: rotateY(0deg);
-}
+} */
 
 @media screen and (min-width:1200px) {
     .unique-ingredients-item-back {
