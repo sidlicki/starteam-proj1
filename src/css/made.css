@@ -55,7 +55,7 @@
 }
 
 .play-btn:hover .icon-play,
-.play-btn:focus> .icon-play{
+.play-btn:focus .icon-play{
     fill: var(--orange-color);
 }
 
