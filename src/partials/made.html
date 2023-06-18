@@ -1,9 +1,94 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -made, щоб уникнути дублювання стилів -->
-<section class="made-section">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
-        <!-- починай писати свій код під цією лінією -->
+<section class="made-section" id="made_section">
+  <div class="container made-section-container">
+    <h2 class="section-title made-section-title">
+      HOW IT&#039;S<span class="span-orange">MADE?</span>
+    </h2>
 
-        <!-- твій код має бути вище цієї лінії -->
+    <div class="made-section-two_blocks-wrapper">
+      <div class="made-section-video-wrapper" id="video-wrapper">
+        <picture>
+          <!-- DESKTOP -->
+          <source
+            srcset="/img/made/desktop/bg-video.png 1x, /img/made/desktop/bg-video@2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <!-- TABLET -->
+          <source
+            srcset="/img/made/tablet/bg-video.png 1x, /img/made/tablet/bg-video@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <!-- MOBILE -->
+          <source
+            srcset="/img/made/mobile/bg-video.png 1x, /img/made/mobile/bg-video@2x.png 2x"
+            media="(min-width: 280px)"
+          />
+          <img
+            class="made-section-img"
+            src="/src/img/made/desktop/bg-video.png"
+            alt="photo"
+            width=""
+            height=""
+          />
+        </picture>
+
+        <iframe
+          class="video hidden"
+          id="made_video"
+          width=""
+          height=""
+          src="https://www.youtube.com/embed/DISjdfkSjc8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+
+        <button type="button" id="button-play-video" class="play-btn">
+          <svg class="play-btn-icon" aria-label="button`s icon" width="14" height="15">
+            <use class="icon-play" href="/img/svg/sprite.svg#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="made-section-description">
+        <h3 class="made-title-second">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+
+        <ul class="made-section-list list">
+          <li class="made-section-item">
+            <p class="made-paragraf">
+              Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+            </p>
+          </li>
+
+          <li class="made-section-item">
+            <p class="made-paragraf">
+              At the same time, prepare a water bath. Melt the butter on it.
+            </p>
+          </li>
+
+          <li class="made-section-item">
+            <p class="made-paragraf">
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone
+              spatula so that the mass becomes uniform and silky.
+            </p>
+          </li>
+
+          <li class="made-section-item">
+            <p class="made-paragraf">Heat the mixture over low heat, letting it barely boil.</p>
+          </li>
+
+          <li class="made-section-item">
+            <p class="made-paragraf">
+              Pour the chocolate into special containers (can be replaced with ice molds). Allow to
+              cool and harden.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
