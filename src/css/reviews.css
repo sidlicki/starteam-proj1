@@ -242,11 +242,14 @@ padding: 104px 24px 0px 24px;
 @media screen and (min-width: 768px) {
     .reviews-modal {
         max-width: 517px;
+        height: 628px;
     }
     .reviews-contact-form-input {
         width: 437px;
+        height: 66px;
     }
     .contact-form-comment {
          width: 437px;
+         height: 137px;
     }
 }
