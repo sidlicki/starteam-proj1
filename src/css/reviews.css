@@ -11,17 +11,17 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: -0.03em;
 color: #FD9222;
-margin-bottom: 98px;
+margin-bottom: 74px;
 }
 .reviews-name-one {
  color: #111111;   
 }
 .reviews-main {
     margin-bottom: 32px;
+    overflow-x: clip;
 }
 .reviews-list {
     display: flex;
-    gap: 16px;
 }
 .reviews-team {
 position: relative;
@@ -33,6 +33,7 @@ box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 border-radius: 15px; 
 margin-left: auto;
 margin-right: auto;
+padding: 104px 16px 0px 16px;
 }
 .reviews-img-name {
 display: flex;
@@ -59,7 +60,7 @@ margin-right: auto;
 margin-bottom: 24px;
 }
 .reviews-team-info {
-width: 335px;
+width: 299px;
 font-family: 'Montserrat';
 font-weight: 400;
 font-size: 14px;
@@ -69,14 +70,9 @@ letter-spacing: -0.02em;
 color: rgba(17, 17, 17, 0.7); 
 margin-left: auto;
 margin-right: auto;
-padding: 104px 16px 42px 16px;
 }
 /* Styles swiper */
 
-/* .swiper {
-    width: 600px;
-    height: 300px;
-} */
 .swiper-pagination-bullet {
     width: 13px;
     height: 13px;
@@ -96,8 +92,8 @@ padding: 104px 16px 42px 16px;
 /* Buttom */
 
 .reviews-open-btn {
-    background: transparent;
- display: flex;
+background: transparent;
+display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 12px 28px;
@@ -119,4 +115,37 @@ margin-right: auto;
 .reviews-open-btn:focus {
    background: #FD9222;
    color: #FFFFFF; 
+}
+
+@media screen and (min-width: 768px) {
+.reviews-name {
+font-size: 24px;
+line-height: 1.16;
+margin-bottom: 91px;
+}
+.reviews-main {
+    margin-bottom: 50px;
+}
+.reviews-list {
+gap: 16px;
+}
+.reviews-team {
+width: 344px;
+}
+
+.reviews-team-info {
+width: 312px;
+}
+}
+@media screen and (min-width: 1200px) {
+.reviews-list {
+        gap: 28px;
+    }
+ .reviews-team {
+width: 360px;
+padding: 104px 24px 0px 24px;
+ }
+ .reviews-img-name {
+    left: 80px;
+ }
 }
