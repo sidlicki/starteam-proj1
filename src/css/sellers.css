@@ -139,6 +139,9 @@ line-height: 1.16;
 .sellers-list-item-two {
     order: 4;
 }
+.info-sellers-sections {
+    width: 407px;
+}
 .sellers-list-item-tree {
     order: 2;
     margin-right: 16px;

@@ -66,3 +66,33 @@
         <!-- твій код має бути вище цієї лінії -->
     </div>
 </section>
+  <div class="reviews-modal modal" data-modal="2">
+    <!--  клас який потрібно накинути для Svg іконки для закриття вікна  -->
+    <button type="button" class="reviews-modal-btn" data-modal-close>
+      <svg class="modal-close-item js-modal-close" width="12" height="12">
+        <use href="./src/img/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    
+    <h2 class="reviews-modal-name">LEAVE A REWIEW ABOUT <span class="reviews-modal-name-two">OUR CHOCOLATE</span></h2>
+  
+    <form action="">
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-name" id="user-name" placeholder="Name" required
+          pattern="[a-zA-Z]+">
+      </div>
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-mail" id="user-name"
+          placeholder="Enter your email" required pattern="[a-zA-Z]+">
+      </div>
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-namber" id="user-name" placeholder="Phone number"
+          required pattern="[a-zA-Z]+">
+      </div>
+      <div class="contact-texterea">
+        <textarea class="contact-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
+      </div>
+      <button type="submit" class="contact-form-submit">Send</button>
+    </form>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
