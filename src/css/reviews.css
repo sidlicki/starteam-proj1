@@ -96,6 +96,7 @@ padding: 104px 16px 42px 16px;
 /* Buttom */
 
 .reviews-open-btn {
+    background: transparent;
  display: flex;
 flex-direction: row;
 align-items: flex-start;
