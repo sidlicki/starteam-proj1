@@ -39,3 +39,87 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* Reviews-Modal */
+.reviews-modal {
+position: relative;
+width: 311px;
+height: 471px;
+background: #FAFAFA;
+border-radius: 15px; 
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: #FCF1E0;
+  border: none;
+  fill: #F16529;
+}
+
+.reviews-modal-name {
+  width: 255px;
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #111111;
+margin-bottom: 32px
+}
+.reviews-modal-name-two {
+ color: #FD9222;
+}
+.reviews-contact-form-input {
+ width: 263px;
+ height: 40px;
+ background-color: transparent;
+ padding-left: 16px;
+ border: 1.5px solid rgba(17, 17, 17, 0.05);
+ border-radius: 8px;
+ outline: transparent; 
+ margin-bottom: 16px
+}
+.contact-form-comment {
+  width: 95%;
+  max-width: 263px;
+  height: 91px;
+  resize: none;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  margin-bottom: 18px
+}
+.contakt-form-submit {
+width: 93px;
+height: 41px;
+background: #FD9222;
+border-radius: 100px;
+padding: 12px 28px;
+border: none;
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 14px;
+line-height: 1.2;
+color: #FFFFFF;
+}
+
