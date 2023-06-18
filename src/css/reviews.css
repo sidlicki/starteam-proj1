@@ -252,4 +252,8 @@ padding: 104px 24px 0px 24px;
          width: 437px;
          height: 137px;
     }
+        .contact-form-submit {
+            width: 117px;
+            height: 45px;
+        }
 }
