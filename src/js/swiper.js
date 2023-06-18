@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  spaceBetween: 20,
+  spaceBetween: 18,
   autoplay: true,
   autoplaySpeed: 7500,
   pauseOnHover: true,
