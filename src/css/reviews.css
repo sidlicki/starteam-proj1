@@ -171,13 +171,17 @@ padding: 104px 24px 0px 24px;
     height: 24px;
     border: none;
     padding: 0;
+    background-color: transparent;
+}
+.modal-close-icon {
+    stroke: #111111;
 }
 
 .reviews-modal-btn:hover,
 .reviews-modal-btn:focus {
     background-color: #FCF1E0;
     border: none;
-    fill: #F16529;
+    stroke: #F16529;
 }
 
 .reviews-modal-name {
