@@ -10,7 +10,7 @@ font-size: 20px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: -0.03em;
-color: #FD9222;
+color: var(--orange-color);
 margin-bottom: 74px;
 }
 .reviews-name-one {
@@ -222,6 +222,10 @@ padding: 104px 24px 0px 24px;
     outline: transparent;
     margin-bottom: 16px
 }
+.reviews-contact-form-input::placeholder {
+color: rgba(64, 64, 64, 0.3);
+}
+
 .reviews-modal-number {
     display: block;
     position: relative;
@@ -235,6 +239,9 @@ padding: 104px 24px 0px 24px;
     border-radius: 8px;
     outline: transparent;
     margin-bottom: 16px
+}
+.reviews-contact-form-input-one::placeholder {
+color: rgba(64, 64, 64, 0.3);
 }
 .reviews-contact-icon {
     position: absolute;
