@@ -301,6 +301,9 @@ color: rgba(64, 64, 64, 0.3);
 .contact-form-comment:focus {
     border-color: var(--orange-color);
 }
+.contact-form-comment::placeholder {
+color: rgba(64, 64, 64, 0.3);
+}
 
 .contact-form-submit {
     width: 93px;
