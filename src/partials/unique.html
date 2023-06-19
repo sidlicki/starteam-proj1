@@ -1,9 +1,143 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -unique, щоб уникнути дублювання стилів -->
-<section class="unique-section">
+<section class="unique-section" id="unique">
     <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
+    <div class="container unique-container">
         <!-- починай писати свій код під цією лінією -->
-
+        <h3 class="section-title unique-section-title ">IT ALL ADDS UP TO ONE EXCEPTIONAL&nbsp;<span
+                class="span-orange">&nbsp;TASTE</span> SENSATION</h3>
+        <p class="unique-description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
+            details. From the sourcing of the
+            finest ingredients to the careful crafting of each individual piece, every step of our process adds up to
+            one
+            exceptional taste sensation.</p>
+        <ul class=" list unique-ingredients-list">
+            <li class="unique-ingredients-item unique-milk-chocolate">
+                <!-- ===========flip -->
+                <div class="unique-flip-card-inner">
+                    <div class="unique-ingredients-item-face">
+                        <h4>MILK CHOCOLATE</h4>
+                    </div>
+                    <div id="unique-choco-container" class="unique-ingredients-item-back">
+                        <div id="unique-benefits-choco-container" class="unique-prevent-padding-overflow">
+                            <h4 class="unique-item-back-title">Milk chocolate</h4>
+                            <button id="unique-back-item-choco-hide" class="unique-back-item-name"
+                                onclick="this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-benefits-choco-container').style='overflow: hidden;';
+                                    document.getElementById('unique-back-item-choco-show').style='background-color: white; border: 1px solid #fd9222;';
+                                    document.getElementById('unique-choco-container').style='height: 100%;'
+                            ">chocolate</button>
+                            <button id="unique-back-item-choco-show" type="button" class="unique-back-item-benefits" 
+                                onclick="document.getElementById('unique-benefits-choco-container').style='overflow: visible;'; 
+                                    this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-choco-container').style='height: auto;'
+                                    document.getElementById('unique-back-item-choco-hide').style='background-color: white; border: 1px solid #fd9222;'
+                                    ">the benefits</button>
+                            <p class="unique-back-item-description">Milk chocolate is a solid chocolate confectionery containing
+                                cocoa, sugar and milk. It is the most consumed type of
+                                chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times.
+                                Although four-fifths of all
+                                milk chocolate is sold in the United States and Europe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========flip -->
+            </li>
+            <li class="unique-ingredients-item unique-milk">
+                <!-- ===========flip -->
+                <div class="unique-flip-card-inner">
+                    <div class="unique-ingredients-item-face">
+                        <h4>Milk</h4>
+                    </div>
+                    <div id="unique-milk-container" class="unique-ingredients-item-back">
+                        <div id="unique-benefits-milk-container" class="unique-prevent-padding-overflow">
+                            <h4 class="unique-item-back-title">Milk</h4>
+                            <button id="unique-back-item-milk-hide" class="unique-back-item-name" 
+                            onclick="this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-benefits-milk-container').style='overflow: hidden;';
+                                    document.getElementById('unique-back-item-milk-show').style='background-color: white; border: 1px solid #fd9222;';
+                                    document.getElementById('unique-milk-container').style='height: 100%;'
+                            ">Milk</button>
+                            <button id="unique-back-item-milk-show" type="button" class="unique-back-item-benefits" 
+                                onclick="document.getElementById('unique-benefits-milk-container').style='overflow: visible;'; 
+                                    this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-milk-container').style='height: auto;'
+                                    document.getElementById('unique-back-item-milk-hide').style='background-color: white; border: 1px solid #fd9222;'
+                                    ">the benefits</button>
+                            <p class="unique-back-item-description">
+                                Milk is a white liquid food produced by the mammary glands of mammals. It is the
+                                primary source of nutrition for young mammals (including breastfed human infants) before they
+                                are able to digest
+                                solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen
+                                the immune system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========flip -->
+            </li>
+            <li class="unique-ingredients-item unique-nuts">
+                <!-- ===========flip -->
+                <div class="unique-flip-card-inner">
+                    <div class="unique-ingredients-item-face">
+                        <h4>NUTS</h4>
+                    </div>
+                    <div id="unique-nuts-container" class="unique-ingredients-item-back">
+                        <div id="unique-benefits-nuts-container" class="unique-prevent-padding-overflow">
+                            <h4 class="unique-item-back-title">nuts</h4>
+                            <button id="unique-back-item-nuts-hide" class="unique-back-item-name" 
+                                onclick="this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-benefits-nuts-container').style='overflow: hidden;';
+                                    document.getElementById('unique-back-item-nuts-show').style='background-color: white; border: 1px solid #fd9222;';
+                                    document.getElementById('unique-nuts-container').style='height: 100%;'
+                            ">nuts</button>
+                            <button id="unique-back-item-nuts-show" type="button" class="unique-back-item-benefits" 
+                                onclick="document.getElementById('unique-benefits-nuts-container').style='overflow: visible'; 
+                                this.style='background-color: #fd9222;';
+                                document.getElementById('unique-nuts-container').style='height: auto;'
+                                document.getElementById('unique-back-item-nuts-hide').style='background-color: white; border: 1px solid #fd9222;'
+                                ">the benefits</button>
+                            <p class="unique-back-item-description">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer
+                                benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy
+                                fats, and plant protein. Plus, they’re great on their own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========flip -->
+            </li>
+            <li class="unique-ingredients-item unique-sweet-chocolate">
+                <!-- ===========flip -->
+                <div class="unique-flip-card-inner">
+                    <div class="unique-ingredients-item-face">
+                        <h4>SEMI - SWEET CHOCOLATE</h4>
+                    </div>
+                    <div id="unique-sweet-container" class="unique-ingredients-item-back">
+                        <div id="unique-benefits-sweet-container" class="unique-prevent-padding-overflow">
+                            <h4 class="unique-item-back-title">semi - sweet chocolate</h4>
+                            <button id="unique-back-item-sweet-hide" class="unique-back-item-name"
+                                onclick="this.style='background-color: #fd9222;';
+                                    document.getElementById('unique-benefits-sweet-container').style='overflow: hidden;';
+                                    document.getElementById('unique-back-item-sweet-show').style='background-color: white; border: 1px solid #fd9222;';
+                                    document.getElementById('unique-sweet-container').style='height: 100%;'
+                            ">sweet chocolate</button>
+                            <button id="unique-back-item-sweet-show" type="button" class="unique-back-item-benefits"  
+                                onclick="document.getElementById('unique-benefits-sweet-container').style='overflow: visible;'; 
+                                this.style='background-color: #fd9222;';
+                                document.getElementById('unique-sweet-container').style='height: auto;'
+                                document.getElementById('unique-back-item-sweet-hide').style='background-color: white; border: 1px solid #fd9222;'
+                                ">the benefits</button>
+                            <p class="unique-back-item-description">Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                                One of the best ways to gain an understanding of this type of chocolate is to compare it to a
+                                different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it
+                                has a slightly bitter taste whereas milk chocolate is sweeter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========flip -->
+            </li>
+        </ul>
         <!-- твій код має бути вище цієї лінії -->
     </div>
 </section>

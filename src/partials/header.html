@@ -1,9 +1,120 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -header, щоб уникнути дублювання стилів -->
-<header class="header">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
-        <!-- починай писати свій код під цією лінією -->
-
-        <!-- твій код має бути вище цієї лінії -->
+<header class="page-header" id="home">
+  <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
+  <div class="page-header-container container">
+    <!-- починай писати свій код під цією лінією -->
+    <div class="header-logo-wrapper">
+      <span class="header-logo-text">SIMPLY CHOCOLATE</span>
+      <svg class="header-logo-icon" width="21" height="21">
+        <use href="/img/svg/sprite.svg#icon-chocolate"></use>
+      </svg>
     </div>
+    <nav class="header-navigation navigation">
+      <ul class="header-navigation-list list">
+        <li class="header-navigation-list-item">
+          <a href="#home" class="header-navigation-link link">Home</a>
+        </li>
+        <li class="header-navigation-list-item">
+          <a href="#made" class="header-navigation-link link">How it&#039;s made?</a>
+        </li>
+        <li class="header-navigation-list-item">
+          <a href="#products" class="header-navigation-link link">Our products</a>
+        </li>
+        <li class="header-navigation-list-item">
+          <a href="#sellers" class="header-navigation-link link">Top sellers</a>
+        </li>
+        <li class="header-navigation-list-item">
+          <a href="#reviews" class="header-navigation-link link">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-networks-wrapper">
+      <ul class="header-networks-list list">
+        <li class="header-networks-list-item">
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header-networks-link link"
+          >
+            <svg class="header-networks-twitter-icon" width="24" height="24">
+              <use href="/img/svg/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-networks-list-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header-networks-link link"
+          >
+            <svg class="header-networks-instagram-icon" width="24" height="24">
+              <use href="/img/svg/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+      <svg class="mobile-menu-open-btn-icon" width="28" height="28">
+        <use href="/img/svg/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <!-- твій код має бути вище цієї лінії -->
+  </div>
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu-container">
+      <button type="button" class="mobile-menu-close-btn js-close-menu">
+        <svg class="mobile-menu-close-btn-icon" width="28" height="28">
+          <use href="/img/svg/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-list-item">
+          <a href="#home" class="mobile-menu-list-link link">Home</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a href="#made" class="mobile-menu-list-link link">How it&#039;s made?</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a href="#products" class="mobile-menu-list-link link">Our products</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a href="#sellers" class="mobile-menu-list-link link">Top sellers</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a href="#reviews" class="mobile-menu-list-link link">Chocolate is loved</a>
+        </li>
+      </ul>
+      <div class="mobile-menu-networks-wrapper">
+        <ul class="mobile-menu-networks-list list">
+          <li class="mobile-menu-networks-list-item">
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu-networks-link link"
+            >
+              <svg class="mobile-menu-networks-twitter-icon" width="22" height="22">
+                <use href="./img/svg/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-networks-list-item">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu-networks-link link"
+            >
+              <svg class="mobile-menu-networks-instagram-icon" width="22" height="22">
+                <use href="./img/svg/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
