@@ -298,6 +298,9 @@ color: rgba(64, 64, 64, 0.3);
     resize: none;
     margin-bottom: 18px
 }
+.contact-form-comment:focus {
+    border-color: #FD9222;
+}
 
 .contact-form-submit {
     width: 93px;
