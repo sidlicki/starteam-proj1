@@ -14,7 +14,7 @@ color: var(--orange-color);
 margin-bottom: 74px;
 }
 .reviews-name-one {
- color: #111111;   
+ color: var(--black-color);   
 }
 .reviews-main {
     margin-bottom: 32px;
@@ -54,7 +54,7 @@ font-weight: 600;
 font-size: 18px;
 line-height: 1.3;
 text-align: center;
-color: #111111; 
+color: var(--black-color);; 
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 24px;
@@ -98,20 +98,20 @@ align-items: center;
 justify-content: center;
 width: 165px;
 height: 41px;
-border: 1px solid #FD9222;
+border: 1px solid var(--orange-color);
 border-radius: 100px; 
 font-family: 'Montserrat';
 font-weight: 600;
 font-size: 14px;
 line-height: 1.21;
 text-align: center;
-color: #111111;  
+color: var(--black-color);  
 margin-left: auto;
 margin-right: auto;
 }
 .reviews-open-btn:hover,
 .reviews-open-btn:focus {
-   background: #FD9222;
+   background: var(--orange-color);
    color: #FFFFFF; 
 }
 
@@ -208,7 +208,7 @@ padding: 104px 24px 0px 24px;
 }
 
 .reviews-modal-name-two {
-    color: #FD9222;
+    color: var(--orange-color);
 }
 
 .reviews-contact-form-input {
@@ -225,7 +225,7 @@ padding: 104px 24px 0px 24px;
 color: rgba(64, 64, 64, 0.3);
 }
 .reviews-contact-form-input:focus {
-    border-color: #FD9222;
+    border-color: var(--orange-color);
 }
 
 .reviews-modal-number {
@@ -246,7 +246,7 @@ color: rgba(64, 64, 64, 0.3);
 color: rgba(64, 64, 64, 0.3);
 }
 .reviews-contact-form-input-one:focus {
-    border-color: #FD9222;
+    border-color: var(--orange-color);
 }
 .reviews-contact-icon {
     position: absolute;
@@ -299,13 +299,13 @@ color: rgba(64, 64, 64, 0.3);
     margin-bottom: 18px
 }
 .contact-form-comment:focus {
-    border-color: #FD9222;
+    border-color: var(--orange-color);
 }
 
 .contact-form-submit {
     width: 93px;
     height: 41px;
-    background: #FD9222;
+    background: var(--orange-color);
     border-radius: 100px;
     padding: 12px 28px;
     border: none;
