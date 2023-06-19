@@ -77,25 +77,21 @@
     <h2 class="reviews-modal-name">LEAVE A REWIEW ABOUT <span class="reviews-modal-name-two">OUR CHOCOLATE</span></h2>
   
     <form action="">
-      
-        <label class="modal-contact-form-field-wraper" for="user-name">
+      <div>
         <input type="text" class="reviews-contact-form-input" name="user-name" id="user-name" placeholder="Name" required
           pattern="[a-zA-Z]+">
-    
-      
-        <label class="modal-contact-form-field-wraper" for="user-mail">
-        <input type="email" class="reviews-contact-form-input" name="user-mail" id="user-name"
-          placeholder="Enter your email" required">
-      
-      
-        <label class="modal-contact-form-field-wraper" for="user-number">
-        <input type="text" class="reviews-contact-form-input" name="user-number" id="user-name" placeholder="Phone number"
+      </div>
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-mail" id="user-name"
+          placeholder="Enter your email" required pattern="[a-zA-Z]+">
+      </div>
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-namber" id="user-name" placeholder="Phone number"
           required pattern="[a-zA-Z]+">
-      
-      
-        <label class="modal-contact-form-field-wraper" for="user-comment">
+      </div>
+      <div class="contact-texterea">
         <textarea class="contact-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
-      
+      </div>
       <button type="submit" class="contact-form-submit">Send</button>
     </form>
   </div>
