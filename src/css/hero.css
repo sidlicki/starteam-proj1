@@ -1,1 +1,750 @@
-/* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+/*-----------------MOBILE--------------*/
+
+/*--Описание контента HERO--*/
+.hero-content {
+    max-width: 335px;
+    background-color: #fff;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 395px;
+    padding-bottom: 21px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+        url(/img/hero/mobile/background.png);
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*--Описываем медиаправило для фонового изображения HERO-mobile--*/
+@media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2ppx) and (max-width: 767px) {
+    .hero-content {
+        background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+            url(/img/hero/mobile/background@2x.png)
+    }
+}
+
+
+/*--Подзаголовок--*/
+.hero-section-subtitle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+/*--Общий контейнер кнопок--*/
+.container-btn-general {
+    display: flex;
+    flex-direction: column;
+}
+
+/*---Контейнер кнопок----*/
+.container-btn {
+    display: flex;
+}
+
+
+/*-----Кнопка-Buy now------*/
+.hero-btn1 {
+    color: rgba(255, 255, 255, 1);
+    background-color: var(--orange-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+    border: none;
+    display: block;
+    min-width: 120px;
+    height: 41px;
+    margin-left: 0;
+    border-radius: 100px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/*--Меняем цвет кнопок при навeдении--*/
+.hero-btn1:hover,
+.hero-btn1:focus {
+    color: var(--orange-color);
+    background-color: #FCF1E0;
+}
+
+
+/*-----Кнопка-How it's made------*/
+.hero-btn2 {
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+    border: 1px solid #fff;
+    display: block;
+    text-align: center;
+    min-width: 159px;
+    height: 41px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: auto;
+    border-radius: 100px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+
+/*--Меняем цвет кнопок при навeдении--*/
+.hero-btn2:hover,
+.hero-btn2:focus {
+    color: var(--orange-color);
+    background-color: #E2E2E2;
+    border-color: var(--orange-color);
+}
+
+
+/*-----Кнопка-Scroll------*/
+.hero-btn-scroll {
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    margin-top: 32px;
+    border: none;
+    width: 107px;
+    height: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    transition: color 0.3s, background-color 0.3s;
+    }
+
+/*--Описываем контейнер иконки scroll--*/
+.hero-btn-scroll-cont {
+width: 28px;
+height: 28px;
+border-radius: 50%;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+background-color: #fff;
+}
+
+
+/*-----Описываем иконку-----*/
+.hero-btn-scroll-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--orange-color);
+    }
+
+
+/*--Меняем цвет кнопок при навeдении--*/
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus {
+    color: var(--orange-color);
+}
+
+
+/*--Меняем фон кнопки scroll при наведении--*/
+.hero-btn-scroll:hover>.hero-btn-scroll-cont,
+.hero-btn-scroll:focus>.hero-btn-scroll-cont {
+    background-color: var(--orange-color);
+}
+
+/*--Меняем цвет заливки иконки при наведении--*/
+.hero-btn-scroll:hover .hero-btn-scroll-icon,
+.hero-btn-scroll:focus .hero-btn-scroll-icon {
+    fill: #fff;
+}
+
+
+/*----------------TABLET-----------------*/
+
+@media screen and (min-width: 768px) {
+    .hero-content {
+        max-width: 704px;
+        padding-top: 671px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+            url(/img/hero/tablet/background.png);
+    }
+
+
+    /*--Описываем медиаправило для фонового изображения HERO-tablet--*/
+    @media screen and (min-device-pixel-ratio:2) and (min-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2ppx) and (min-width: 768px) {
+        .hero-content {
+            background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+                url(/img/hero/tablet/background@2x.png)
+        }
+    }
+
+
+    /*--Подзаголовок--*/
+    .hero-section-subtitle {
+        font-size: 28px;
+        line-height: 1.21;
+        max-width: 484px;
+    }
+
+    /*--Общий контейнер кнопок--*/
+    .container-btn-general {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+
+    /*-----Кнопка-Buy now------*/
+    .hero-btn1 {
+        min-width: 144px;
+        height: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+
+    /*-----Кнопка-How it's made------*/
+    .hero-btn2 {
+        min-width: 183px;
+        height: 45px;
+        margin-left: 14px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+
+/*-----Кнопка-Scroll------*/
+.hero-btn-scroll {
+font-size: 14px;
+line-height: 1.28;
+width: 130px;
+height: 38px;
+margin-left: auto;
+margin-top: 0;
+}
+
+
+/*--Описываем контейнер иконки scroll--*/
+.hero-btn-scroll-cont {
+width: 38px;
+height: 38px;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+
+/*-----Описываем иконку-----*/
+.hero-btn-scroll-icon {
+width: 22px;
+height: 22px;
+ }
+
+
+/*-----Описываем иконку-----*/
+.hero-btn-scroll-icon {
+width: 22px;
+height: 22px;
+}
+
+}
+
+
+/*--------------DESKTOP------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .hero-content {
+        max-width: 1136px;
+        padding-top: 381px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+            url(/img/hero/desktop/background.png);
+    }
+
+
+    /*--Описываем медиаправило для фонового изображения HERO-desktop--*/
+    @media screen and (min-device-pixel-ratio:2) and (min-width:1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2ppx) and (min-width: 1200px) {
+        .hero-content {
+            background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+                url(/img/hero/desktop/background@2x.png)
+        }
+    }
+
+}
+
+/*------------------------------------------*/
+
+/*------------МОДАЛЬНОЕ ОКНО ORDER/BUY-------------*/
+
+/*----------------MOBILE VERSION------------------*/
+
+    
+/*--Описание модального окна--*/
+.hero-modal-window {
+    background-color: #FAFAFA;
+    width: 311px;
+    height: 95%;
+    max-height: 994px;
+    overflow: scroll;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    }
+
+/*--Описание кнопки закрытия модального окна--*/
+.hero-modal-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+
+/*-Описание иконки закрытия модального окна-*/
+.hero-modal-close-btn-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #111;
+    transition: fill 0.3s;
+}
+
+/*--Меняем цвет иконки при ховере/фокусе модальной кнопки закрытия--*/
+.hero-modal-close-btn:hover .hero-modal-close-btn-icon,
+.hero-modal-close-btn:focus .hero-modal-close-btn-icon {
+    stroke: var(--orange-color);
+}
+
+
+/*--Надпись над формами--*/
+.hero-modal-buy-text {
+    margin-bottom: 32px;
+    color: var(--orange-color);
+}
+
+
+/*--Описание списка карточек--*/
+.hero-modal-buy-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+/*----Карточка шоколада---*/
+.hero-modal-buy-item {
+    width: 263px;
+    height: 85px;
+    background-color:#fff;
+    flex-basis: calc((100% - 2*8px)/3);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+
+/*--Контейнер шоколада--*/
+.hero-modal-buy-item-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 231px;
+    height: 69px;
+}
+
+
+/*--Описание кнопки в карточке шоколада--*/
+.hero-modal-buy-item-button {
+    width: 73px;
+    height: 29px;
+    color: #111;
+    background: #fafafa;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+
+/*--Описание формы модального окна--*/
+.hero-modal-buy-form {
+    margin-top: 18px;
+}
+
+
+/*--Описание <label> модального окна--*/
+.hero-modal-buy-label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+/*--Описание контейнера для input--*/
+.hero-modal-buy-form-cont {
+    display: block;
+    position: relative;
+}
+
+/*--Добавляем псевдоэлемент +380--*/
+.add-cont-phone::after {
+    content: '+380';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    width: 0px;
+    height: 0px;
+    left: 50px;
+    bottom: 30px;
+    margin: auto;
+    position: absolute;
+}
+
+/*--Добавляем псевдоэлемент палочку--*/
+.add-cont-phone::before {
+    content: '';
+    width: 1.5px;
+    height: 25px;
+    left: 93px;
+    bottom: 10px;
+    border-radius: 2px;
+    background-color: rgba(64, 64, 64, 0.3);
+    margin: auto;
+    position: absolute;
+}
+
+
+/*--Дополнительный класс для отступа вниз--*/
+.add {
+margin-bottom: 14px;
+}
+
+
+/*--Описание <input>--*/
+.hero-modal-buy-input {
+width: 100%;
+height: 45px;
+font-weight: 400;
+font-size: 14px;
+padding-left: 18px;
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+border-radius: 8px;
+background-color: transparent;
+outline: transparent;
+transition: border-color 0.3s;
+color: #404040;
+}
+
+/*--Меняем цвет рамки на <input>--*/
+.hero-modal-buy-input:focus {
+border-color: var(--orange-color);
+}
+
+/*--Задаем цвет placeholder input--*/
+.hero-modal-buy-input::placeholder {
+color: rgba(64, 64, 64, 0.3);
+}
+
+
+/*--Дополнительный класс для паддинга номера--*/
+.add-phone {
+padding-left: 106px;
+}
+
+.add-phone::placeholder {
+padding-left: 0px;
+}
+
+
+/*--Описываем вложенные иконки в формы--*/
+.hero-icon-form-phone {
+position: absolute;
+left: 16px;
+width: 24px;
+height: 18px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+
+/*--Описываем вложенные иконки в формы--*/
+.hero-icon-form-card {
+position: absolute;
+right: 14px;
+width: 32px;
+height: 21px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+
+/*--Описываем textarea--*/
+.hero-modal-buy-form-textarea {
+margin-top: 18px;
+margin-bottom: 16px;
+}
+
+/*--Описание формы textarea Comment--*/
+.hero-modal-buy-textarea {
+    display: block;
+    width: 100%;
+    height: 91px;
+    resize: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 0.3s;
+}
+
+
+/*--Меняем цвет рамки textarea при ховере и фокусе--*/
+.hero-modal-buy-textarea:focus {
+    border-color: var(--orange-color);
+}
+
+/*--Задаем цвет placeholder textarea--*/
+.hero-modal-buy-textarea::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+}
+
+
+/*--Кнопка Send модального окна--*/
+.hero-modal-buy-btn {
+    display: block;
+    border: none;
+    min-width: 109px;
+    min-height: 41px;
+    background-color: var(--orange-color);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/*--Описываем ховер и фокус модальной кнопки--*/
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+    color: var(--orange-color);
+    background-color: #FCF1E0;
+}
+
+
+/*----------------ПЛАНШЕТНАЯ ВЕРСИЯ-----------------*/
+
+@media screen and (min-width: 768px) {
+
+    /*--Описание модального окна--*/
+    .hero-modal-window {
+        width: 609px;
+        max-height: 1058px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+
+    /*--Описание кнопки закрытия модального окна--*/
+    .hero-modal-close-btn {
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+        }
+
+    /*-Описание иконки закрытия модального окна-*/
+    .hero-modal-close-btn-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    /*--Надпись над формами--*/
+    .hero-modal-buy-text {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    /*--Описание списка карточек--*/
+    .hero-modal-buy-ul {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    /*----Карточка шоколада---*/
+    .hero-modal-buy-item {
+        width: 160px;
+        height: 196px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 18px;
+    }
+
+
+    /*--Контейнер шоколада--*/
+    .hero-modal-buy-item-card {
+        flex-direction: column;
+        width: 120px;
+        height: 154px;
+    }
+
+    /*--Описание кнопки в карточке шоколада--*/
+    .hero-modal-buy-item-button {
+        width: 96px;
+        height: 33px;
+    }
+
+
+    /*--Контейнер персональных данных--*/
+    .hero-modal-buy-form-personal-label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-modal-buy-form-personal {
+        display: flex;
+        gap: 21px;
+    }
+
+    /*--Описание <label> модального окна--*/
+    .hero-modal-buy-label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    }
+
+
+/*--Описание <input>--*/
+    .hero-modal-buy-input {
+        height: 66px;
+        font-size: 18px;
+        line-height: 1.22;
+        padding-left: 24px;
+        }
+
+
+    .add-personal {
+        width: 246px;
+        height: 66px;
+    }
+
+    /*--Дополнительный класс для паддинга номера--*/
+    .add-phone {
+        padding-left: 177px;
+    }
+
+
+   /*--Добавляем псевдоэлемент +380--*/
+.add-cont-phone::after {
+    content: '+380';
+    font-size: 18px;
+    width: 0px;
+    height: 0px;
+    left: 74px;
+    bottom: 42px;
+}
+
+/*--Добавляем псевдоэлемент палочку--*/
+.add-cont-phone::before {
+    content: '';
+    height: 30px;
+    left: 149px;
+    bottom: 18px;
+}
+
+ /*--Описываем вложенные иконки в формы--*/
+ .hero-icon-form-phone {
+     left: 24px;
+     width: 32px;
+     height: 24px;
+     transition: fill 0.3s;
+ }
+
+
+    /*--Описываем вложенные иконки в формы--*/
+    .hero-icon-form-card {
+        right: 24px;
+        width: 44px;
+        height: 30px;
+        }
+
+
+    /*--Описание формы textarea Comment--*/
+    .hero-modal-buy-textarea {
+        height: 137px;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.02em;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        border-radius: 4px;
+        background-color: transparent;
+        outline: transparent;
+        transition: border-color 0.3s;
+    }
+
+
+    /*--Кнопка Send модального окна--*/
+    .hero-modal-buy-btn {
+        min-width: 133px;
+        min-height: 45px;
+    }
+
+}
+
+
+/*------------------ДЕСКТОПНАЯ ВЕРСИЯ-----------------*/
+
+/*--НОВЫХ УСЛОВИЙ для ДЕСКТОПНОЙ ВЕРСИИ НЕТ--*/

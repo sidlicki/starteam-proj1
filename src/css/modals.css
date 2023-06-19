@@ -11,7 +11,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
-}
+  }
 
 /* Спільні стилі для модальних вікон */
 
@@ -25,7 +25,6 @@
   max-width: 609px;--*/
 
   /*  центруємо і задаємо z-index */
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -39,4 +38,4 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
+    }
