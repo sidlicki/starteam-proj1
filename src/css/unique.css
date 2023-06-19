@@ -1,311 +1,310 @@
 /* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
 .unique-section {
-    padding-top: 72px;
-    background-color: #FAFAFA;
-    display: flex;
-    justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  /* background-color: #fafafa; */
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
-    .unique-section {
-        padding-top: 100px;
-    }
+  .unique-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .unique-section {
-        padding-top: 128px;
-    }
+  .unique-section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 /* ============ My proposal: move to reset.css for .container */
 @media screen and (min-width: 768px) {
-    .unique-container {
-        width: 768px;
-    }
+  .unique-container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .unique-container {
-        width: 1200px;
-    }
+  .unique-container {
+    width: 1200px;
+  }
 }
 
 /* ====================== */
 
 .unique-section-title {
-    min-width: 283px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 283px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
-    .unique-section-title {
-        width: 411px;
-    }
+  .unique-section-title {
+    width: 411px;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .unique-section-title {
-        width: 486px;
-    }
+@media screen and (min-width: 768px) {
+  .unique-section-title {
+    width: 486px;
+  }
 }
-
 
 .unique-description {
-    width: 100%;
-    margin-top: 24px;
-    text-align: center;
-    color: var(--black-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  margin-top: 24px;
+  text-align: center;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width:768px) {
-    .unique-description {
-        width: 486px;
-        margin-top: 28px;
-    }
+@media screen and (min-width: 768px) {
+  .unique-description {
+    width: 486px;
+    margin-top: 28px;
+  }
 }
-
 
 .unique-ingredients-list {
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
-@media screen and (min-width:768px) {
-    .unique-ingredients-list {
-        margin-top: 50px;
-        display: flex;
-        gap: 32px;
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 768px) {
+  .unique-ingredients-list {
+    margin-top: 50px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (min-width:1200px) {
-    .unique-ingredients-list {
-        gap: 19px;
-    }
+@media screen and (min-width: 1200px) {
+  .unique-ingredients-list {
+    gap: 19px;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .unique-ingredients-item:not(:first-child) {
-        margin-top: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .unique-ingredients-item:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
 .unique-ingredients-item {
-    width: 100%;
-    height: 270px;
-    position: relative;
-    perspective: 1000px; /* flip === Remove this if you don't want the 3D effect */
+  width: 100%;
+  height: 270px;
+  position: relative;
+  perspective: 1000px; /* flip === Remove this if you don't want the 3D effect */
 }
 /*  ========================== flip card ================== */
 .unique-flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .unique-ingredients-item:hover .unique-flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .unique-ingredients-item-face,
 .unique-ingredients-item-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
 }
 
 /* Style the back side */
 .unique-ingredients-item-back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 /*  ========================== flip card end ================== */
-                        
-@media screen and (min-width:768px) {
-    .unique-ingredients-item {
-        flex-basis: calc((100% - 1*32px) / 2);
-    }
+
+@media screen and (min-width: 768px) {
+  .unique-ingredients-item {
+    flex-basis: calc((100% - 1 * 32px) / 2);
+  }
 }
 
-@media screen and (min-width:1200px) {
-    .unique-ingredients-item {
-        flex-basis: calc((100% - 3*19px) / 4);
-    }
+@media screen and (min-width: 1200px) {
+  .unique-ingredients-item {
+    flex-basis: calc((100% - 3 * 19px) / 4);
+  }
 }
 
 .unique-ingredients-item-face {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
 }
 
-
-.unique-ingredients-item-face>h4 {
-    position: absolute;
-    bottom: 28px;
-    left: 28px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+.unique-ingredients-item-face > h4 {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
-.unique-sweet-chocolate>.unique-flip-card-inner,
-.unique-milk>.unique-flip-card-inner {
-    border: 1px solid var(--orange-color);
+.unique-sweet-chocolate > .unique-flip-card-inner,
+.unique-milk > .unique-flip-card-inner {
+  border: 1px solid var(--orange-color);
 }
 .unique-flip-card-inner:hover {
-    border: none;
+  border: none;
 }
 
-.unique-milk-chocolate>.unique-flip-card-inner {
-    background-color: var(--orange-color);
-    color: #FFFFFF;
+.unique-milk-chocolate > .unique-flip-card-inner {
+  background-color: var(--orange-color);
+  color: #ffffff;
 }
 
-.unique-nuts>.unique-flip-card-inner {
-    background-color: var(--dark-purple-color);
-    color: #FFFFFF;
+.unique-nuts > .unique-flip-card-inner {
+  background-color: var(--dark-purple-color);
+  color: #ffffff;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-    .unique-sweet-chocolate {
-        order: 2;
-    }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .unique-sweet-chocolate {
+    order: 2;
+  }
 
-    .unique-milk {
-        order: 3;
-    }
+  .unique-milk {
+    order: 3;
+  }
 
-    .unique-nuts {
-        order: 4;
-    }
+  .unique-nuts {
+    order: 4;
+  }
 }
 
 /* =================== Background-images =========== */
 /* .unique-ingredients-item-face */
 .unique-flip-card-inner {
-    background-repeat: no-repeat;
-    background-position: right 50% top 28px;
-    background-size: 224px 171px;
+  background-repeat: no-repeat;
+  background-position: right 50% top 28px;
+  background-size: 224px 171px;
 }
 
 /* mobile & tablet */
-@media screen and (max-width:1199px) {
-    .unique-milk-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/chocolate.png);
-    }
+@media screen and (max-width: 1199px) {
+  .unique-milk-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/chocolate.png);
+  }
 
-    .unique-milk>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/milk.png);
-    }
+  .unique-milk > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/milk.png);
+  }
 
-    .unique-nuts>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/hazelnuts.png);
-    }
+  .unique-nuts > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/hazelnuts.png);
+  }
 
-    .unique-sweet-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/cocoa.png);
-    }
+  .unique-sweet-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/cocoa.png);
+  }
 }
 
-@media screen and (min-device-pixel-ratio:2) and (max-width:1199px),
-screen and (min-resolution:192dpi) and (max-width:1119px),
-screen and (min-resolution:2dppx) and (max-width:1199px) {
-    .unique-milk-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/chocolate@2x.png);
-    }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (max-width: 1119px),
+  screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .unique-milk-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/chocolate@2x.png);
+  }
 
-    .unique-milk>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/milk@2x.png);
-    }
+  .unique-milk > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/milk@2x.png);
+  }
 
-    .unique-nuts>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/hazelnuts@2x.png);
-    }
+  .unique-nuts > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/hazelnuts@2x.png);
+  }
 
-    .unique-sweet-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/mobile-tablet/cocoa@2x.png);
-    }
+  .unique-sweet-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/mobile-tablet/cocoa@2x.png);
+  }
 }
 
 /* desctop */
 @media screen and (min-width: 1200px) {
-    .unique-flip-card-inner {
-        background-position: right 28px top 28px;
-        background-size: 206px 160px;
-    }
+  .unique-flip-card-inner {
+    background-position: right 28px top 28px;
+    background-size: 206px 160px;
+  }
 
-    .unique-milk-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/chocolate.png);
-    }
+  .unique-milk-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/chocolate.png);
+  }
 
-    .unique-milk>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/milk.png);
-    }
+  .unique-milk > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/milk.png);
+  }
 
-    .unique-nuts>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/hazelnuts.png);
-    }
+  .unique-nuts > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/hazelnuts.png);
+  }
 
-    .unique-sweet-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/cocoa.png);
-    }
+  .unique-sweet-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/cocoa.png);
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
-screen and (min-resolution: 192dpi) and (min-width:1200px),
-screen and (min-resolution: 2dppx) and (min-width:1200px) {
-    .unique-milk-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/chocolate@2x.png)
-    }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .unique-milk-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/chocolate@2x.png);
+  }
 
-    .unique-milk>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/milk@2x.png);
-    }
+  .unique-milk > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/milk@2x.png);
+  }
 
-    .unique-nuts>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/hazelnuts@2x.png);
-    }
+  .unique-nuts > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/hazelnuts@2x.png);
+  }
 
-    .unique-sweet-chocolate>.unique-flip-card-inner {
-        background-image: url(/img/unique/desktop/cocoa@2x.png);
-    }
+  .unique-sweet-chocolate > .unique-flip-card-inner {
+    background-image: url(/img/unique/desktop/cocoa@2x.png);
+  }
 }
 
 /* =================== Background-images end =========== */
 .unique-ingredients-item-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    padding: 28px;
-    background-color: var(--white-color);
-    border-radius: 14px;
-    border: none;
-    color: var(--black-color);
-    /* transform: rotateY(-90deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 28px;
+  background-color: var(--white-color);
+  border-radius: 14px;
+  border: none;
+  color: var(--black-color);
+  /* transform: rotateY(-90deg);
     transition: transform 0.5s;
     transform-origin: right; */
 }
@@ -314,65 +313,64 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     transform: rotateY(0deg);
 } */
 
-@media screen and (min-width:1200px) {
-    .unique-ingredients-item-back {
-        padding: 20px;
-    }
+@media screen and (min-width: 1200px) {
+  .unique-ingredients-item-back {
+    padding: 20px;
+  }
 }
 
 .unique-item-back-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(-black-color);
-    margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(-black-color);
+  margin-bottom: 8px;
 }
 
 .unique-back-item-name {
-    display: inline-flex;
-    background-color: var(--orange-color);
-    border: none;
-    border-radius: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 24px;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6px;
+  display: inline-flex;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
 }
 
 .unique-back-item-benefits {
-    display: inline-flex;
-    border: 1px solid var(--orange-color);
-    border-radius: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 24px;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6px;
+  display: inline-flex;
+  border: 1px solid var(--orange-color);
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
 }
 .unique-back-item-benefits:hover {
-    background-color: var(--orange-color);
+  background-color: var(--orange-color);
 }
-
 
 .unique-back-item-description {
-    margin-top: 14px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 .unique-prevent-padding-overflow {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
