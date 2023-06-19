@@ -224,6 +224,9 @@ padding: 104px 24px 0px 24px;
 .reviews-contact-form-input::placeholder {
 color: rgba(64, 64, 64, 0.3);
 }
+.reviews-contact-form-input:focus {
+    border-color: #FD9222;
+}
 
 .reviews-modal-number {
     display: block;
@@ -241,6 +244,9 @@ color: rgba(64, 64, 64, 0.3);
 }
 .reviews-contact-form-input-one::placeholder {
 color: rgba(64, 64, 64, 0.3);
+}
+.reviews-contact-form-input-one:focus {
+    border-color: #FD9222;
 }
 .reviews-contact-icon {
     position: absolute;
