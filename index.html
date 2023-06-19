@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/starteam-proj1/assets/index-a96a1a22.js"></script>
-  <link rel="stylesheet" href="/starteam-proj1/assets/index-471f82b3.css">
+  <link rel="stylesheet" href="/starteam-proj1/assets/index-f5a64150.css">
 </head>
 
 <body>
@@ -590,14 +590,70 @@
     </div>
 </section>
     <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -subscribe, щоб уникнути дублювання стилів -->
-<section class="subscribe-section">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
-        <!-- починай писати свій код під цією лінією -->
+<section class="subscribe-section" id="subscribe">
+  <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
+  <div class="container subscribe-container">
+    <!-- починай писати свій код під цією лінією -->
+    <h2 class="section-title-on-dark subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-main-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+      indulgence that will leave you craving more. Made with only the finest ingredients and
+      handcrafted with the utmost care, each piece is a work of art that is sure to please.
+    </p>
+    <button class="js-open-modal subscribe-opn-btn" data-modal="3">Subscribe</button>
+    <!-- твій код має бути вище цієї лінії -->
+  </div>
 
-        <!-- твій код має бути вище цієї лінії -->
-    </div>
+  <!-- MODAL -->
+
+  <div class="modal subscribe-modal" data-modal="3">
+    <!--  клас який потрібно накинути для Svg іконки для закриття вікна  -->
+    <button class="js-modal-close subscribe-modal-cls-btn">
+      <svg class="subscribe-cls-boton-icon" width="24" height="24">
+        <use href="/starteam-proj1/assets/sprite-840015d5.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form>
+      <picture>
+        <!-- TABLET -->
+        <source
+          srcset="/starteam-proj1/assets/pop-up-f14e2a13.png 1x, /starteam-proj1/assets/pop-up@2x-ed610bc3.png 2x"
+          media="(min-width: 768px)"
+        />
+        <!-- MOBILE -->
+        <source
+          srcset="/starteam-proj1/assets/pop-up-552ad8ba.png 1x, /starteam-proj1/assets/pop-up@2x-a04d5f4c.png 2x"
+          media="(min-width: 280px)"
+        />
+        <img class="subscribe-modal-img" src="/starteam-proj1/assets/pop-up-552ad8ba.png" alt="img1" />
+      </picture>
+      <div class="subscribe-text-wrapper">
+        <p class="subscribe-frm-text">
+          Explore our <br />
+          <span class="span-orange">new chocolate</span> first!
+        </p>
+        <div class="subscribe-form-main">
+          <label>
+            <input
+              id="user-email"
+              class="subscribe-form-email-input"
+              type="email"
+              name="user_mail"
+              required
+              pattern="[A-Z,a-z][@][.com]"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          <button type="submit" class="subscribe-form-btn">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 </section>
+
   </main>
   <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -footer, щоб уникнути дублювання стилів -->
 <footer class="footer" id="footer">
