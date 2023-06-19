@@ -16,7 +16,7 @@
         >scroll down
         <div class="hero-btn-scroll-cont">
           <svg class="hero-btn-scroll-icon">
-            <use href="../img/svg/sprite.svg#icon-arrow"></use>
+            <use href="/img/svg/sprite.svg#icon-arrow"></use>
           </svg></div
       ></a>
     </div>
@@ -29,186 +29,183 @@
 
 <!------------MODAL WINDOW ORDER / BUY--------->
 
-<div class="overlay js-overlay-modal">
-  <div class="modal modal-buy-window" data-modal="1">
-    <button type="button" class="modal-close-btn js-modal-close">
-      <svg class="modal-close-btn-icon">
-        <use href="./img/svg/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="section-title modal-buy-text">
-      BUY<span class="section-title text-add"> NOW</span>
-    </h2>
+<div class="modal hero-modal-window" data-modal="1">
+  <button type="button" class="hero-modal-close-btn js-modal-close">
+    <svg class="hero-modal-close-btn-icon">
+      <use href="/img/svg/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="section-title hero-modal-buy-text">
+    BUY<span class="section-title text-add"> NOW</span>
+  </h2>
 
-    <ul class="modal-buy-ul">
-      <li class="modal-buy-item list">
-        <div class="modal-buy-item-card">
-          <picture>
-            <source
-              srcset="
-                ./img/buy-now-modal/tablet-desktop/image1.png    1x,
-                ./img/buy-now-modal/tablet-desktop/image1@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./img/buy-now-modal/mobile/image1.png    1x,
-                ./img/buy-now-modal/mobile/image1@2x.png 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img src="./img/buy-now-modal/mobile/image1.png" alt="" width="" />
-          </picture>
-          <button class="modal-buy-item-button">100 g</button>
-        </div>
-      </li>
-
-      <li class="modal-buy-item list">
-        <div class="modal-buy-item-card">
-          <picture>
-            <source
-              srcset="
-                ./img/buy-now-modal/tablet-desktop/image2.png    1x,
-                ./img/buy-now-modal/tablet-desktop/image2@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./img/buy-now-modal/mobile/image2.png    1x,
-                ./img/buy-now-modal/mobile/image2@2x.png 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img src="./img/buy-now-modal/mobile/image2.png" alt="" width="" />
-          </picture>
-
-          <button class="modal-buy-item-button">200 g</button>
-        </div>
-      </li>
-
-      <li class="modal-buy-item list">
-        <div class="modal-buy-item-card">
-          <picture>
-            <source
-              srcset="
-                ./img/buy-now-modal/tablet-desktop/image3.png    1x,
-                ./img/buy-now-modal/tablet-desktop/image3@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./img/buy-now-modal/mobile/image3.png    1x,
-                ./img/buy-now-modal/mobile/image3@2x.png 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img src="./img/buy-now-modal/mobile/image3.png" alt="" width="" />
-          </picture>
-
-          <button class="modal-buy-item-button">300 g</button>
-        </div>
-      </li>
-    </ul>
-
-    <form class="modal-buy-form">
-      <div class="modal-buy-form-personal-label">
-        <label class="modal-buy-label" for="user-name">Personal information</label>
-
-        <div class="modal-buy-form-personal">
-          <div class="modal-buy-form-cont add">
-            <input
-              id="user-name"
-              type="text"
-              name="user-name"
-              class="modal-buy-input add-personal"
-              required
-              pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ']+"
-              minlength="3"
-              placeholder="Name"
-            />
-          </div>
-
-          <div class="modal-buy-form-cont">
-            <input
-              id="user-surname"
-              type="text"
-              name="user-surname"
-              class="modal-buy-input add-personal"
-              required
-              pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ']+"
-              minlength="3"
-              placeholder="Surname"
-            />
-          </div>
-        </div>
+  <ul class="hero-modal-buy-ul">
+    <li class="hero-modal-buy-item list">
+      <div class="hero-modal-buy-item-card">
+        <picture>
+          <source
+            srcset="
+              /img/buy-now-modal/tablet-desktop/image1.png    1x,
+              /img/buy-now-modal/tablet-desktop/image1@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/buy-now-modal/mobile/image1.png    1x,
+              /img/buy-now-modal/mobile/image1@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="/img/buy-now-modal/mobile/image1.png" alt="kinder" width="84" />
+        </picture>
+        <button class="hero-modal-buy-item-button">100 g</button>
       </div>
+    </li>
 
-      <div class="modal-buy-form">
-        <label class="modal-buy-label" for="user-email">Email</label>
-        <div class="modal-buy-form-cont">
+    <li class="hero-modal-buy-item list">
+      <div class="hero-modal-buy-item-card">
+        <picture>
+          <source
+            srcset="
+              /img/buy-now-modal/tablet-desktop/image2.png    1x,
+              /img/buy-now-modal/tablet-desktop/image2@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/buy-now-modal/mobile/image2.png    1x,
+              /img/buy-now-modal/mobile/image2@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="/img/buy-now-modal/mobile/image2.png" alt="praline" width="84" />
+        </picture>
+
+        <button class="hero-modal-buy-item-button">200 g</button>
+      </div>
+    </li>
+
+    <li class="hero-modal-buy-item list">
+      <div class="hero-modal-buy-item-card">
+        <picture>
+          <source
+            srcset="
+              /img/buy-now-modal/tablet-desktop/image3.png    1x,
+              /img/buy-now-modal/tablet-desktop/image3@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/buy-now-modal/mobile/image3.png    1x,
+              /img/buy-now-modal/mobile/image3@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="/img/buy-now-modal/mobile/image3.png" alt="dark" width="84" />
+        </picture>
+
+        <button class="hero-modal-buy-item-button">300 g</button>
+      </div>
+    </li>
+  </ul>
+
+  <form class="hero-modal-buy-form">
+    <div class="hero-modal-buy-form-personal-label">
+      <label class="hero-modal-buy-label" for="user-name">Personal information</label>
+
+      <div class="hero-modal-buy-form-personal">
+        <div class="hero-modal-buy-form-cont add">
           <input
-            id="user-email"
-            type="email"
-            name="user-email"
-            class="modal-buy-input"
+            id="user-name"
+            type="text"
+            name="user-name"
+            class="hero-modal-buy-input add-personal"
             required
-            placeholder="Enter your email"
+            pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+            minlength="3"
+            placeholder="Name"
+          />
+        </div>
+
+        <div class="hero-modal-buy-form-cont">
+          <input
+            id="user-surname"
+            type="text"
+            name="user-surname"
+            class="hero-modal-buy-input add-personal"
+            required
+            pattern="^[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+            minlength="3"
+            placeholder="Surname"
           />
         </div>
       </div>
+    </div>
 
-      <div class="modal-buy-form">
-        <label class="modal-buy-label" for="user-phone-number">Phone number</label>
-        <div class="modal-buy-form-cont">
-          <input
-            id="user-phone-number"
-            type="tel"
-            name="user-phone-number"
-            class="modal-buy-input add-phone"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            placeholder="Phone number"
-          />
-          <svg class="icon-form-phone">
-            <use href="./img/svg/sprite.svg#icon-flag-ukraine"></use>
-          </svg>
-        </div>
+    <div class="hero-modal-buy-form">
+      <label class="hero-modal-buy-label" for="user-email">Email</label>
+      <div class="hero-modal-buy-form-cont">
+        <input
+          id="user-email"
+          type="email"
+          name="user-email"
+          class="hero-modal-buy-input"
+          required
+          placeholder="Enter your email"
+        />
       </div>
+    </div>
 
-      <div class="modal-buy-form">
-        <label class="modal-buy-label" for="user-phone">Card number</label>
-        <div class="modal-buy-form-cont">
-          <input
-            id="user-card"
-            type="card"
-            name="user-card"
-            class="modal-buy-input"
-            required
-            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-            title="xxxx-xxxx-xxxx-xxxx"
-            placeholder="Enter card"
-          />
-          <svg class="icon-form-card">
-            <use href="./img/svg/sprite.svg#icon-mastercard"></use>
-          </svg>
-        </div>
+    <div class="hero-modal-buy-form">
+      <label class="hero-modal-buy-label" for="user-phone-number">Phone number</label>
+      <div class="hero-modal-buy-form-cont add-cont-phone">
+        <input
+          id="user-phone-number"
+          type="number"
+          name="user-phone-number"
+          class="hero-modal-buy-input add-phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone number"
+        />
+        <svg class="hero-icon-form-phone">
+          <use href="/img/svg/sprite.svg#icon-flag-ukraine"></use>
+        </svg>
       </div>
+    </div>
 
-      <div class="modal-buy-form-textarea">
-        <label class="modal-buy-label" for="user-comment">Comment</label>
-        <textarea
-          id="user-comment"
-          name="user-comment"
-          class="modal-buy-textarea"
-          placeholder="Enter text"
-        ></textarea>
+    <div class="hero-modal-buy-form">
+      <label class="hero-modal-buy-label" for="user-card">Card number</label>
+      <div class="hero-modal-buy-form-cont">
+        <input
+          id="user-card"
+          type="number"
+          name="user-card"
+          class="hero-modal-buy-input"
+          title="xxxx-xxxx-xxxx-xxxx"
+          placeholder="Enter card"
+        />
+        <svg class="hero-icon-form-card">
+          <use href="/img/svg/sprite.svg#icon-mastercard"></use>
+        </svg>
       </div>
+    </div>
 
-      <button type="submit" class="modal-btn">Submit</button>
-    </form>
-  </div>
+    <div class="hero-modal-buy-form-textarea">
+      <label class="hero-modal-buy-label" for="user-comment">Comment</label>
+      <textarea
+        id="user-comment"
+        name="user-comment"
+        class="hero-modal-buy-textarea"
+        placeholder="Enter text"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="hero-modal-buy-btn">Submit</button>
+  </form>
 </div>
+<div class="overlay js-overlay-modal"></div>
