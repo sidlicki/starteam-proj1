@@ -38,6 +38,12 @@
     cursor: pointer;
 }
 
+.contact-footer-link:hover,
+.contact-footer-link:focus {
+    color: var(--orange-color);
+}
+
+
 .navigation-link {
     font-weight: 500;
     font-size: 14px;
@@ -45,6 +51,12 @@
     letter-spacing: -0.02em;
     color: var(--white-color);
     cursor: pointer;
+}
+
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--orange-color);
 }
 
 .navigation {
