@@ -1,26 +1,27 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -hero, щоб уникнути дублювання стилів -->
 <section class="hero-section">
   <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-  <div class="container hero-content">
+  <div class="container">
     <!-- починай писати свій код під цією лінією -->
-    <h2 class="hero-section-title visually-hidden">Hero</h2>
-    <h3 class="hero-section-subtitle">
-      Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-    </h3>
-    <div class="container-btn-general">
-      <div class="container-btn">
-        <button type="button" class="hero-btn1 list js-open-modal" data-modal="1">Buy now</button>
-        <a class="hero-btn2 link" href="#made">How it's made</a>
+    <div class="hero-content">
+      <h2 class="hero-section-title visually-hidden">Hero</h2>
+      <h3 class="hero-section-subtitle">
+        Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+      </h3>
+      <div class="container-btn-general">
+        <div class="container-btn">
+          <button type="button" class="hero-btn1 list js-open-modal" data-modal="1">Buy now</button>
+          <a class="hero-btn2 link" href="#made">How it's made</a>
+        </div>
+        <a class="hero-btn-scroll link" href="#footer"
+          >scroll down
+          <div class="hero-btn-scroll-cont">
+            <svg class="hero-btn-scroll-icon">
+              <use href="/img/svg/sprite.svg#icon-arrow"></use>
+            </svg></div
+        ></a>
       </div>
-      <a class="hero-btn-scroll link" href="#footer"
-        >scroll down
-        <div class="hero-btn-scroll-cont">
-          <svg class="hero-btn-scroll-icon">
-            <use href="/img/svg/sprite.svg#icon-arrow"></use>
-          </svg></div
-      ></a>
     </div>
-
     <!-- твій код має бути вище цієї лінії -->
   </div>
 </section>
@@ -164,11 +165,11 @@
       <div class="hero-modal-buy-form-cont add-cont-phone">
         <input
           id="user-phone-number"
-          type="number"
+          type="tel"
           name="user-phone-number"
           class="hero-modal-buy-input add-phone"
           required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          pattern="[0-9]+"
           title="xxx-xxx-xx-xx"
           placeholder="Phone number"
         />
@@ -183,9 +184,11 @@
       <div class="hero-modal-buy-form-cont">
         <input
           id="user-card"
-          type="number"
+          type="text"
           name="user-card"
           class="hero-modal-buy-input"
+          required
+          pattern="[0-9]+"
           title="xxxx-xxxx-xxxx-xxxx"
           placeholder="Enter card"
         />
