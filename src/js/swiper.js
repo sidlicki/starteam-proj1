@@ -30,8 +30,8 @@ function initializeSwiper() {
     cubeEffect: {
       slideShadows: true,
       shadow: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
+      shadowOffset: 10,
+      shadowScale: 0.7,
     },
 
     keyboard: {
