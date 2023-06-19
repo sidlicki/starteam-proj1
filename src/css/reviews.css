@@ -118,6 +118,9 @@ margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
+    .reviews-section {
+            padding-bottom: 100px;
+        }
 .reviews-name {
 font-size: 24px;
 line-height: 1.16;
@@ -138,6 +141,9 @@ width: 312px;
 }
 }
 @media screen and (min-width: 1200px) {
+.reviews-section {
+padding-bottom: 128px;
+}
 .reviews-list {
         gap: 28px;
     }
@@ -154,6 +160,7 @@ padding: 104px 24px 0px 24px;
 .reviews-modal {
     position: relative;
     max-width: 311px;
+    height: 95%;
     height: 471px;
     background: #FAFAFA;
     border-radius: 15px;
@@ -177,9 +184,8 @@ padding: 104px 24px 0px 24px;
     stroke: #111111;
 }
 
-.reviews-modal-btn:hover,
-.reviews-modal-btn:focus {
-    background-color: #FCF1E0;
+.reviews-modal-btn:hover .modal-close-icon,
+.reviews-modal-btn:focus .modal-close-icon {
     border: none;
     stroke: #F16529;
 }
@@ -209,6 +215,53 @@ padding: 104px 24px 0px 24px;
     border-radius: 8px;
     outline: transparent;
     margin-bottom: 16px
+}
+.reviews-modal-number {
+    display: block;
+    position: relative;
+}
+.reviews-contact-form-input-one {
+    width: 263px;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 106px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    outline: transparent;
+    margin-bottom: 16px
+}
+.reviews-contact-icon {
+    position: absolute;
+        display: block;
+        top: 35%;
+        left: 16px;
+        transform: translateY(-50%);
+}
+.reviews-modal-number::after {
+    content: '+380';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    width: 0px;
+    height: 0px;
+    top: -5%;
+    left: 45px;
+    bottom: 30px;
+    margin: auto;
+    position: absolute;
+}
+.reviews-modal-number::before {
+    content: '';
+    width: 1.5px;
+    height: 25px;
+    top: -5%;
+    left: 85px;
+    bottom: 10px;
+    border-radius: 2px;
+    background-color: rgba(64, 64, 64, 0.3);
+    margin: auto;
+    position: absolute;
 }
 
 .contact-form-comment {
@@ -250,6 +303,24 @@ padding: 104px 24px 0px 24px;
         width: 437px;
         height: 66px;
     }
+        .reviews-contact-form-input-one {
+        width: 437px;
+        height: 66px;
+        }
+        .reviews-contact-icon {
+            width: 32px;
+            height: 24px;
+            top: 40%;
+            left: 16px;
+        }
+        .reviews-modal-number::after {
+        top: -5%;
+        left: 55px;
+        }
+        .reviews-modal-number::before {
+        top: -5%;
+        left: 95px;
+        }
     .contact-form-comment {
          width: 437px;
          height: 137px;

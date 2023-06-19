@@ -1,5 +1,5 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -reviews, щоб уникнути дублювання стилів -->
-<section class="reviews-section">
+<section class="reviews-section" id="reviews">
     <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
     <div class="container">
         <!-- починай писати свій код під цією лінією -->
@@ -82,12 +82,14 @@
           pattern="[a-zA-Z]+">
       </div>
       <div>
-        <input type="text" class="reviews-contact-form-input" name="user-mail" id="user-name"
-          placeholder="Enter your email" required pattern="[a-zA-Z]+">
+        <input type="email" class="reviews-contact-form-input" name="user-mail" id="user-name"
+          placeholder="Enter your email" required>
       </div>
-      <div>
-        <input type="text" class="reviews-contact-form-input" name="user-namber" id="user-name" placeholder="Phone number"
+      <div class="reviews-modal-number">
+        <input type="text" class="reviews-contact-form-input-one" name="user-namber" id="user-name" placeholder="Phone number"
           required pattern="[a-zA-Z]+">
+        <svg class="reviews-contact-icon" aria-label="icon name" width="18" height="24">
+          <use href="./img/svg/sprite.svg#icon-flag-ukraine"></use>
       </div>
       <div class="contact-texterea">
         <textarea class="contact-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>

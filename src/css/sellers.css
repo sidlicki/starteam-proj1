@@ -23,7 +23,7 @@ margin-bottom: 32px;
     display: flex;
    justify-content: center;
    margin-bottom: 20px;
-   width: 335px;
+   max-width: 335px;
    height: 464px;
    border-radius: 15px;
 }
@@ -51,7 +51,7 @@ margin-bottom: 32px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    width: 335px;
+    max-width: 335px;
     height: 464px;
    
 }
@@ -82,6 +82,9 @@ margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
+    .sellers-section {
+        padding-bottom: 100px;
+    }
     .sellers-name {
       font-size: 24px;
 line-height: 1.16;  
@@ -92,6 +95,7 @@ line-height: 1.16;
     flex-wrap: wrap;
   }
   .sellers-list-item-one {
+    max-width: unset;
     width: 344px;
     margin-right: 16px;
     border-radius: 15px;
@@ -106,6 +110,7 @@ line-height: 1.16;
     order: 3;
   }
   .sellers-list-item-tree {
+    max-width: unset;
     width: 344px;
     order: 2;
    
@@ -122,7 +127,7 @@ line-height: 1.16;
 
 @media screen and (min-width: 1200px) {
     .sellers-section {
-            padding-bottom: 100px;
+            padding-bottom: 128px;
         }
     .sellers-name {
         margin-bottom: 50px;
