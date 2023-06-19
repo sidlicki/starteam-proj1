@@ -62,14 +62,14 @@ margin-bottom: 32px;
     text-align: center;
 }
 .open-sellers-btn {
-    min-width: 162px;
-    height: 50px;
-    padding: 14px 40px;
+    min-width: 120px;
+    height: 41px;
+    padding: 12px 28px;
     background: var(--orange-color);
     border-radius: 100px;
     font-family: var(--main-font-family);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.2;
     color: #FFFFFF;
     border: none;
@@ -122,7 +122,12 @@ line-height: 1.16;
     text-align: none;
     margin-left: auto;
   }
-
+  .open-sellers-btn {
+      min-width: 162px;
+      height: 50px;
+      padding: 14px 40px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
