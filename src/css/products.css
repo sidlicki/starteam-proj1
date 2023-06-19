@@ -67,14 +67,14 @@
   color: var(--black-color);
 
   background: #fafafa;
-  border: 1px solid rgba(17, 17, 17);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
 /* styles swiper */
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
-  background: rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17);
 }
 
 .swiper-pagination-bullet-active {
