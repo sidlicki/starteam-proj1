@@ -94,10 +94,8 @@ margin-right: auto;
 .reviews-open-btn {
 background: transparent;
 display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 12px 28px;
-gap: 14px;
+align-items: center;
+justify-content: center;
 width: 165px;
 height: 41px;
 border: 1px solid #FD9222;
@@ -139,13 +137,14 @@ width: 344px;
 .reviews-team-info {
 width: 312px;
 }
-}
 .reviews-open-btn {
-width: 222px;
+    width: 222px;
     height: 50px;
     font-size: 18px;
-        line-height: 1.2;
+    line-height: 1.2;
 }
+}
+
 @media screen and (min-width: 1200px) {
 .reviews-section {
 padding-bottom: 128px;
