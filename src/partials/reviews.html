@@ -1,9 +1,100 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -reviews, щоб уникнути дублювання стилів -->
-<section class="reviews-section">
+<section class="reviews-section" id="reviews">
     <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
     <div class="container">
         <!-- починай писати свій код під цією лінією -->
-
+          <h2 class="reviews-name">CHOCOLATE <span class="reviews-name-one">IS LOVED</span></h2>
+          <div class="reviews-main swiper-loved">
+              <ul class="reviews-list list swiper-wrapper">
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                        <img srcset="./img/reviews/victoria.png 1x, ./img/reviews/victoria@2x.png 2x" src="./img/reviews/victoria.png"
+                            alt="victoria-dobrzhanska" width="80px" height="80px">
+                        <h3 class="reviews-team-name">Victoria Dobrzhanska</h3>
+                    </div>
+                      <p class="reviews-team-info">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+                  </li>
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                         <img srcset="./img/reviews/nazar.png 1x, ./img/reviews/nazar@2x.png 2x" src="./img/reviews/nazar.png"
+                             alt="nazar-babenko" width="80px" height="80px">
+                         <h3 class="reviews-team-name">Nazar Babenko</h3>
+                    </div>
+                      <p class="reviews-team-info">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the
+                    chocolate is good.</p>
+                  </li>
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                        <img srcset="./img/reviews/olena.png 1x, ./img/reviews/olena@2x.png 2x" src="./img/reviews/olena.png"
+                            alt="olena-kampusch" width="80px" height="80px">
+                        <h3 class="reviews-team-name">Olena Kampusch</h3>
+                    </div>
+                      <p class="reviews-team-info">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft
+                    but crunchy.</p>
+                  </li>
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                        <img srcset="./img/reviews/natalia.png 1x, ./img/reviews/natalia@2x.png 2x" src="./img/reviews/natalia.png"
+                            alt="natalia-sus" width="80px" height="80px">
+                        <h3 class="reviews-team-name">Natalia Sus</h3>
+                    </div>
+                      <p class="reviews-team-info">The chocolate assortment was delicious. Both dark and milk chocolate pieces were smooth and just right on the sweetness
+                    level.</p>
+                  </li>
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                        <img srcset="./img/reviews/danilo.png 1x, ./img/reviews/danilo@2x.png 2x" src="./img/reviews/danilo.png"
+                            alt="danilo-nottingham" width="80px" height="80px">
+                        <h3 class="reviews-team-name">Danilo Nottingham</h3>
+                    </div>                     
+                      <p class="reviews-team-info">This is delicious. It so rich and flavorful you don’t need to use as many. I love topping an apple with almond butter
+                    and these chips for a snack.</p>
+                  </li>
+                  <li class="reviews-team swiper-slide">
+                    <div class="reviews-img-name">
+                    <img srcset="./img/reviews/irina.png 1x, ./img/reviews/irina@2x.png 2x" src="./img/reviews/irina.png"
+                        alt="irina-tydnyuk" width="80px" height="80px">
+                    <h3 class="reviews-team-name">Irina Tydnyuk</h3>
+                    </div>                      
+                      <p class="reviews-team-info">This is simply the best chocolate around, and I'm just thrilled to support a local company! Best local chocolate - world
+                    class :)</p>
+                  </li>
+              </ul>
+                <div class="swiper-pagination"></div>
+          </div>
+          <button class="reviews-open-btn js-open-modal" type="button" data-modal="2">Leave a review</button>
         <!-- твій код має бути вище цієї лінії -->
     </div>
 </section>
+  <div class="reviews-modal modal" data-modal="2">
+    <!--  клас який потрібно накинути для Svg іконки для закриття вікна  -->
+    <button type="button" class="reviews-modal-btn js-modal-close" data-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/img/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    
+    <h2 class="reviews-modal-name">LEAVE A REWIEW ABOUT <span class="reviews-modal-name-two">OUR CHOCOLATE</span></h2>
+  
+    <form action="">
+      <div>
+        <input type="text" class="reviews-contact-form-input" name="user-name" id="user-name" placeholder="Name" required
+          pattern="[a-zA-Z]+">
+      </div>
+      <div>
+        <input type="email" class="reviews-contact-form-input" name="user-mail" id="user-name"
+          placeholder="Enter your email" required>
+      </div>
+      <div class="reviews-modal-number">
+        <input type="text" class="reviews-contact-form-input-one" name="user-namber" id="user-name" placeholder="Phone number"
+          required pattern="[a-zA-Z]+">
+        <svg class="reviews-contact-icon" aria-label="icon name" width="18" height="24">
+          <use href="./img/svg/sprite.svg#icon-flag-ukraine"></use>
+      </div>
+      <div class="contact-texterea">
+        <textarea class="contact-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
+      </div>
+      <button type="submit" class="contact-form-submit">Send</button>
+    </form>
+  </div>
+  <div class="overlay js-overlay-modal"></div>

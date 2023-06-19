@@ -1,9 +1,58 @@
 <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -sellers, щоб уникнути дублювання стилів -->
-<section class="sellers-section">
+<section class="sellers-section" id="sellers">
     <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
     <div class="container">
         <!-- починай писати свій код під цією лінією -->
-
+        <h2 class="sellers-name">TOP <span class="sellers-name-one">SELLERS</span></h2>
+        <ul class="sellers-list list">
+            <li class="sellers-list-item-one">
+                <picture class="sellers-img">
+                <!-- DESKTOP -->
+                <source srcset="/img/sellers/desktop/img1.png 1x, /img/sellers/desktop/img1@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <!-- TABLET -->
+                <source srcset="/img/sellers/tablet/img1.png 1x, /img/sellers/tablet/img1@2x.png 2x" media="(min-width: 768px)" />
+                <!-- MOBILE -->
+                <source srcset="/img/sellers/mobile/img1.png 1x, /img/sellers/mobile/img1@2x.png 2x" media="(min-width: 280px)" />
+                <img class="sellers-img" src="/img/sellers/desktop/img1.png" alt="img1">
+                </picture>
+            </li>
+            <li class="sellers-list-item-two">
+                <p class="info-sellers-sections">Crazy enough chocolate originates from a bean just like the
+        coffee bean called Cacao. Cacao has been around for
+        thousands of years and was first discovered by the Native
+        American tribe called the Mayans.</p>
+            </li>
+            <li class="sellers-list-item-tree">
+                <picture class="sellers-img">
+                <!-- DESKTOP -->
+                <source srcset="/img/sellers/desktop/img2.png 1x, /img/sellers/desktop/img2@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <!-- TABLET -->
+                <source srcset="/img/sellers/tablet/img2.png 1x, /img/sellers/tablet/img2@2x.png 2x" media="(min-width: 768px)" />
+                <!-- MOBILE -->
+                <source srcset="/img/sellers/mobile/img2.png 1x, /img/sellers/mobile/img2@2x.png 2x" media="(min-width: 280px)" />
+                <img class="sellers-img" src="/img/sellers/desktop/img2.png" alt="img2">
+                </picture>
+            </li>
+            <li class="sellers-list-item-four">
+                <picture class="sellers-img">
+                <!-- DESKTOP -->
+                <source srcset="/img/sellers/desktop/img3.png 1x, /img/sellers/desktop/img3@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <!-- TABLET -->
+                <source srcset="/img/sellers/tablet/img3.png 1x, /img/sellers/tablet/img2@3x.png 2x" media="(min-width: 768px)" />
+                <!-- MOBILE -->
+                <source srcset="/img/sellers/mobile/img3.png 1x, /img/sellers/mobile/img3@2x.png 2x" media="(min-width: 280px)" />
+                <img class="sellers-img" src="/img/sellers/desktop/img3.png" alt="img3">
+                </picture>
+            </li>
+            <li class="sellers-list-item-five">
+                <button class="open-sellers-btn js-open-modal" data-modal="1" type="button">Buy now</button>
+            </li>
+        </ul>
+        
         <!-- твій код має бути вище цієї лінії -->
     </div>
 </section>
+

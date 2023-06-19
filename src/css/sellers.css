@@ -1,1 +1,169 @@
 /* зверни увагу, що ширина контейнеру та деякі скидання прописані в /reset.css */
+.sellers-section {
+    padding-bottom: 72px;
+}
+.sellers-name {
+width: 100%;
+font-family: var(--main-font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;  
+color: var(--orange-color);
+text-align: center;
+margin-bottom: 32px;
+}
+.sellers-name-one {
+   color: var(--black-color);
+}
+.sellers-list {
+    display: flex;
+ flex-direction: column;
+}
+.sellers-list-item-one {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+   max-width: 335px;
+   height: 464px;
+   border-radius: 15px;
+}
+.sellers-img {
+max-width: 335px;
+width: 100%;
+border-radius: 15px;
+}
+
+.sellers-list-item-two {
+display: flex;
+margin-bottom: 32px;
+}
+.info-sellers-sections {
+    width: 306px;
+    height: 90px;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+.sellers-list-item-tree {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-width: 335px;
+    height: 464px;
+   
+}
+.sellers-list-item-four {
+    display: none;
+}
+.sellers-list-item-five {
+    text-align: center;
+}
+.open-sellers-btn {
+    min-width: 120px;
+    height: 41px;
+    padding: 12px 28px;
+    background: var(--orange-color);
+    border-radius: 100px;
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    border: none;
+}
+
+.open-sellers-btn:hover,
+.open-sellers-btn:focus {
+    background-color: #FCF1E0;
+    color: var(--orange-color);
+}
+
+@media screen and (min-width: 768px) {
+    .sellers-section {
+        padding-bottom: 100px;
+    }
+    .sellers-name {
+      font-size: 24px;
+line-height: 1.16;  
+    }
+  .sellers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sellers-list-item-one {
+    max-width: unset;
+    width: 344px;
+    margin-right: 16px;
+    border-radius: 15px;
+  }
+        .sellers-img {
+            max-width: 100%;
+            width: 344px;
+            height: 464px;
+        }
+
+  .sellers-list-item-two {
+    order: 3;
+  }
+  .sellers-list-item-tree {
+    max-width: unset;
+    width: 344px;
+    order: 2;
+   
+    border-radius: 15px;
+  }
+
+  .sellers-list-item-five {
+    order: 4;
+    text-align: none;
+    margin-left: auto;
+  }
+  .open-sellers-btn {
+      min-width: 162px;
+      height: 50px;
+      padding: 14px 40px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .sellers-section {
+            padding-bottom: 128px;
+        }
+    .sellers-name {
+        margin-bottom: 50px;
+    }
+.sellers-list-item-one {
+    min-width: 368px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+}
+ .sellers-img {
+     width: 368px;
+     height: 464px;
+ }
+.sellers-list-item-two {
+    order: 4;
+}
+.info-sellers-sections {
+    width: 407px;
+}
+.sellers-list-item-tree {
+    order: 2;
+    margin-right: 16px;
+    width: 368px;
+}
+
+.sellers-list-item-four {
+        display: block;
+        order: 3;
+        width: 368px;
+        margin-bottom: 32px;
+        border-radius: 15px;
+}
+
+}
