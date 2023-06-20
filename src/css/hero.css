@@ -70,7 +70,7 @@
   line-height: 1.22;
   border: none;
   display: block;
-  min-width: 120px;
+  width: 120px;
   height: 41px;
   margin-left: 0;
   border-radius: 100px;
@@ -94,7 +94,7 @@
   border: 1px solid #fff;
   display: block;
   text-align: center;
-  min-width: 159px;
+  width: 159px;
   height: 41px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -208,22 +208,14 @@
   .hero-btn1 {
     min-width: 144px;
     height: 45px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
+      }
 
   /*-----Кнопка-How it's made------*/
   .hero-btn2 {
     min-width: 183px;
     height: 45px;
     margin-left: 14px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
+      }
 
   /*-----Кнопка-Scroll------*/
   .hero-btn-scroll {
@@ -278,6 +270,51 @@
     }
   }
 }
+
+
+/*--
+@media screen and (max-width: 375px) {--*/
+
+
+/*-----Кнопка-Buy now------*/
+/*--.hero-btn1 {
+  /*--color: rgba(255, 255, 255, 1);
+  background-color: var(--orange-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  border: none;
+  display: block;--*/
+  /*--width: 120px;
+  height: 41px;--*/
+  /*--margin-left: 0;
+  border-radius: 100px;
+  transition: color 0.3s, background-color 0.3s;--*/
+/*--}
+
+/*-----Кнопка-How it's made------*/
+/*--.hero-btn2 {
+  width: 159px;
+  height: 41px;
+  /*--color: #fff;
+  background-color: transparent;--*/
+  /*--font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  border: 1px solid #fff;
+  display: block;
+  text-align: center;
+  min-width: 159px;
+  height: 41px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: auto;
+  border-radius: 100px;
+  transition: color 0.3s, background-color 0.3s;--*/
+/*--}--*/
+
+/*--}--*/
+
 
 /*------------------------------------------*/
 
