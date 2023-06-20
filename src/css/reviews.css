@@ -160,7 +160,7 @@
   } */
 }
 
-/* Reviews-Modal */
+/*==================== Reviews-Modal ===========================*/
 .reviews-modal {
   position: relative;
   max-width: 311px;
@@ -195,7 +195,7 @@
 }
 
 .reviews-modal-name {
-  width: 255px;
+  max-width: 254px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 20px;
@@ -301,7 +301,16 @@
   border-color: var(--orange-color);
 }
 .contact-form-comment::placeholder {
-  color: rgba(64, 64, 64, 0.3);
+color: rgba(64, 64, 64, 0.3);
+width: 67px;
+height: 17px;
+font-family: 'Montserrat';  
+font-weight: 400;
+font-size: 14px;
+line-height: 1.2;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
 }
 
 .contact-form-submit {
@@ -324,34 +333,44 @@
     padding: 40px;
   }
   .reviews-modal-name {
+    max-width: 310px;
     font-size: 24px;
     line-height: 1.16;
   }
   .reviews-contact-form-input {
     width: 437px;
     height: 66px;
+    padding-left: 24px;
   }
   .reviews-contact-form-input-one {
     width: 437px;
     height: 66px;
+    padding-left: 177px;
   }
   .reviews-contact-icon {
     width: 32px;
     height: 24px;
     top: 40%;
-    left: 16px;
+    left: 24px;
   }
   .reviews-modal-number::after {
     top: -5%;
-    left: 55px;
+    left: 78px;
+    font-size: 18px;
+    line-height: 1.22;
   }
   .reviews-modal-number::before {
     top: -5%;
-    left: 95px;
+    left: 150px;
   }
   .contact-form-comment {
     width: 437px;
     height: 137px;
+  }
+  .contact-form-comment::placeholder {
+    width: 86px;
+    height: 22px;
+    font-size: 18px;
   }
   .contact-form-submit {
     width: 117px;
