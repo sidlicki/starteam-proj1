@@ -13,10 +13,15 @@
   }
 }
 
-/*  */
+/*===стилі для заголовку===*/
 .made-section-title {
   margin-bottom: 32px;
 }
+
+/*====контейнер відступів між блоком 
+із зображеннями/відео 
+та блоком із текстом=====*/
+
 .made-section-two_blocks-wrapper {
   display: flex;
   flex-direction: column;
@@ -24,6 +29,8 @@
   gap: 20px;
 }
 
+/*====контейнер для зображення, 
+відео та кнопки====*/
 .made-section-video-wrapper {
   position: relative;
 
@@ -32,6 +39,7 @@
   border-radius: 15px;
 }
 
+/*====cтилі для зображення====*/
 .made-section-img {
   max-width: 335px;
   max-height: 500px;
@@ -40,10 +48,12 @@
   border-radius: 15px;
 }
 
+/*====cелектор,котрий приховує відео====*/
 .hidden {
   display: none;
 }
 
+/*===стилі для відео===*/
 .video {
   position: absolute;
   top: 0;
@@ -54,6 +64,7 @@
   border: none;
 }
 
+/*====стилі для button====*/
 .play-btn {
   position: absolute;
   top: 50%;
@@ -70,10 +81,13 @@
   height: 35px;
 }
 
+/*===селектор зі стилізацією кольору іконки
+кнопки,яка лежить на зображенні===*/
 .play-btn-icon {
   fill: var(--white-color);
 }
 
+/*====ховери та фокуси для button===*/
 .play-btn:hover,
 .play-btn:focus {
   border-color: var(--orange-color);
@@ -84,22 +98,8 @@
   fill: var(--orange-color);
 }
 
-@media screen and (min-width: 768px) {
-  .play-btn {
-    width: 44px;
-    height: 44px;
-
-    padding-top: 10px;
-    padding-bottom: 14px;
-    padding-left: 13px;
-    padding-right: 12px;
-  }
-  .play-btn-icon {
-    width: 20px;
-    height: 21px;
-  }
-}
-
+/*===стилі для контейнеру з текстом,
+для позиціонування тектсу===*/
 .made-section-description {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -108,19 +108,19 @@
   background-color: var(--white-color);
   border-radius: 15px;
 }
+
+/*== стилі для заголовку==*/
 .made-title-second {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
   color: var(--black-color);
-
   margin-bottom: 20px;
 }
-.made-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+
+/*==стилі для маркерованого Ul-списку 
+із параграфами==*/
+
 .made-section-list {
   padding-left: 16px;
   display: flex;
@@ -131,6 +131,9 @@
 .made-section-item {
   position: relative;
 }
+
+/*==кастомні стилі для маркерів
+ біля параграфів==*/
 .made-section-item::after {
   position: absolute;
   content: ' ';
@@ -144,6 +147,8 @@
   border: 1px solid #eceded;
   border-radius: 50%;
 }
+
+/*==стилі для параграфа==*/
 .made-paragraf {
   font-weight: 400;
   font-size: 14px;
@@ -152,24 +157,55 @@
   color: var(--black-color);
 }
 
-@media screen and (min-width: 768px) {
+
+/*===стилі для планшету===*/
+
+@media screen and (min-width: 768px){
+
+/*==планшет: розміри зображення==*/
   .made-section-img {
     max-width: 100%;
   }
 
-  .made-section-description {
-    max-width: 614px;
-    padding: 32px;
+/*==планшет: розміри кнопки==*/
+  .play-btn {
+  width: 44px;
+  height: 44px;
+
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+  padding-right: 12px;
+}
+
+  .play-btn-icon {
+  width: 20px;
+  height: 21px;
+}
+
+/*==планшет: розміри 
+для позиціонування заголовку==*/
+  .made-title-second{
+    max-width: 350px;
   }
 
+/*==планшет: розміри для блоку із текстом==*/
+  .made-section-description {
+    max-width: 614px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+/*==планшет: відступ 
+для правильного позиціонування параграфів==*/
   .made-section-list {
     padding-right: 70px;
   }
-
-  .made-title-second {
-    padding-right: 200px;
-  }
 }
+
+/*====стилі для desctop====*/
 
 @media screen and (min-width: 1200px) {
   .made-section {
@@ -178,16 +214,23 @@
   .made-section-two_blocks-wrapper {
     flex-direction: row;
   }
-
   .made-section-video-wrapper {
     max-width: 600px;
   }
-
   .made-section-description {
-    max-width: 516px;
+    max-width: 516px; 
   }
-
   .made-section-title {
     margin-bottom: 50px;
+  }
+  .made-section-list{
+    padding-right: 0;
+    gap: 24px;
+  }
+  .made-section-item{
+    padding-right: 26px;
+  }
+  .made-title-second{
+    margin-bottom: 28px;
   }
 }
