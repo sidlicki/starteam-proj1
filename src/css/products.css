@@ -113,7 +113,7 @@
   .products-container .swiper {
     overflow: unset;
   }
-  .products-container {
+  .products-section {
     overflow: hidden;
   }
 }
