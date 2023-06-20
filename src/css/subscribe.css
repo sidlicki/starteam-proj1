@@ -92,7 +92,8 @@
   margin-right: auto;
 }
 .subscribe-title {
-  width: 291px;
+  max-width: 291px;
+  width: 100%;
   margin: auto;
 }
 /* TABLET */
