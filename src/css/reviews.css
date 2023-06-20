@@ -25,15 +25,15 @@
 }
 .reviews-team {
   position: relative;
-  width: 335px;
+  max-width: 335px;
   height: 200px;
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 104px 16px 0px 16px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 104px 18px 0px 18px;
 }
 .reviews-img-name {
   display: flex;
@@ -43,8 +43,9 @@
   padding: 0px;
   gap: 18px;
   position: absolute;
-  left: 72px;
-  top: -40px;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
 }
 .reviews-team-name {
   width: 200px;
@@ -59,7 +60,7 @@
   margin-bottom: 24px;
 }
 .reviews-team-info {
-  width: 299px;
+  max-width: 299px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
@@ -128,11 +129,14 @@
   }
 
   .reviews-team {
+    max-width: unset;
     width: 344px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .reviews-team-info {
-    width: 312px;
+    max-width: 312px;
   }
   .reviews-open-btn {
     width: 222px;
@@ -151,9 +155,9 @@
     width: 360px;
     padding: 104px 24px 0px 24px;
   }
-  .reviews-img-name {
+  /* .reviews-img-name {
     left: 80px;
-  }
+  } */
 }
 
 /* Reviews-Modal */
@@ -297,7 +301,7 @@
   border-color: var(--orange-color);
 }
 .contact-form-comment::placeholder {
-color: rgba(64, 64, 64, 0.3);
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .contact-form-submit {
