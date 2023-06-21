@@ -4,10 +4,9 @@
 .products-list {
   list-style: none;
 }
-.products-list img {
-  /* width: 100%; */
+/* .products-list img {
   height: auto;
-}
+} */
 
 .products-title {
   margin-bottom: 32px;
