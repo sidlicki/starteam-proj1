@@ -70,7 +70,8 @@
   border: none;
 }
 .mobile-menu-close-btn-icon {
-  stroke: #ffffff;
+  stroke: var(--white-color);
+  transition: stroke var(--transition-dur-and-time-func);
 }
 .mobile-menu-close-btn:hover .mobile-menu-close-btn-icon,
 .mobile-menu-close-btn:focus .mobile-menu-close-btn-icon {
@@ -91,6 +92,7 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #ffffff;
+  transition: color var(--transition-dur-and-time-func);
 }
 .mobile-menu-list-link:hover,
 .mobile-menu-list-link:focus {
@@ -112,14 +114,12 @@
   gap: 16px;
 }
 .mobile-menu-networks-link {
-  stroke: #ffffff;
-  fill: transparent;
-}
-
-.mobile-menu-networks-link {
   display: flex;
   width: 22px;
   height: 22px;
+  stroke: #ffffff;
+  fill: transparent;
+  transition: stroke var(--transition-dur-and-time-func);
 }
 .mobile-menu-networks-link:hover,
 .mobile-menu-networks-link:focus {
@@ -186,6 +186,7 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--black-color);
+    transition: color var(--transition-dur-and-time-func);
   }
   .header-navigation-link:hover,
   .header-navigation-link:focus {
@@ -203,6 +204,7 @@
     fill: transparent;
     width: 24px;
     height: 24px;
+    transition: stroke var(--transition-dur-and-time-func);
   }
   .header-networks-link:hover,
   .header-networks-link:focus {

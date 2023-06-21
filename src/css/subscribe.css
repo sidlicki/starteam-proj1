@@ -94,7 +94,7 @@
 .subscribe-opn-btn {
   width: 128px;
   height: 41px;
-  background: var(--orange-color);
+  background-color: var(--orange-color);
   color: var(--white-color);
   border-radius: 100px;
   border-color: transparent;
@@ -105,8 +105,13 @@
   line-height: 17px;
   margin-left: auto;
   margin-right: auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-time-func),
+    background-color var(--transition-dur-and-time-func);
+}
+.subscribe-opn-btn:hover,
+.subscribe-opn-btn:focus {
+    background: #fcf1e0;
+    color: var(--orange-color);
 }
 
 .subscribe-main-text {
@@ -132,11 +137,7 @@
     max-width: unset;
     width: 467px;
   }
-  .subscribe-opn-btn:hover,
-  .subscribe-opn-btn:focus {
-    background: #fcf1e0;
-    color: var(--orange-color);
-  }
+  
   .subscribe-opn-btn {
     width: 172px;
     height: 50px;
@@ -160,14 +161,11 @@
   border-radius: 15px;
   overflow: hidden;
 }
-.subscribe-cls-boton-icon {
-  stroke: var(--white-color);
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .subscribe-modal-cls-btn {
   border: none;
   display: block;
-  background: transparent;
+  background-color: transparent;
   position: absolute;
   display: flex;
   align-items: center;
@@ -176,8 +174,11 @@
   top: 24px;
   width: 24px;
   height: 24px;
-
   padding: 0;
+}
+.subscribe-cls-boton-icon {
+  stroke: var(--white-color);
+  transition: stroke var(--transition-dur-and-time-func);
 }
 .subscribe-modal-cls-btn .subscribe-cls-boton-icon:hover,
 .subscribe-modal-cls-btn .subscribe-cls-boton-icon:focus {
@@ -189,14 +190,19 @@
   left: 163px;
   top: 0px;
   color: var(--white-color);
-  background: var(--orange-color);
+  background-color: var(--orange-color);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   border-radius: 100px;
   border-color: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-time-func),
+    background-color var(--transition-dur-and-time-func);
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+    background: #fcf1e0;
+    color: var(--orange-color);
 }
 .subscribe-form-email-input {
   outline: transparent;
@@ -209,10 +215,10 @@
   letter-spacing: -0.02em;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-dur-and-time-func);
 }
 .subscribe-form-email-input:focus {
-  border-color: #fd9222;
+  border-color: var(--orange-color);
 }
 .subscribe-form-email-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
@@ -242,11 +248,6 @@
     width: 137px;
     height: 52px;
     margin-left: 8px;
-  }
-  .subscribe-form-btn:hover,
-  .subscribe-form-btn:focus {
-    background: #fcf1e0;
-    color: var(--orange-color);
   }
   .subscribe-form-email-input {
     padding-left: 24px;
