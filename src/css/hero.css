@@ -24,6 +24,11 @@
   padding-bottom: 21px;
   background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
     url(/img/hero/mobile/background.png);
+  background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+    image-set(
+      '/img/hero/mobile/background.webp' type('image/webp'),
+      '/img/hero/mobile/background.png' type('image/png')
+    );
   border-radius: 30px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +42,11 @@
   .hero-content {
     background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
       url(/img/hero/mobile/background@2x.png);
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      image-set(
+        '/img/hero/mobile/background@2x.png' type('image/png'),
+        '/img/hero/mobile/background@2x.webp' type('image/webp')
+      );
   }
 }
 
@@ -179,16 +189,25 @@
     padding-right: 40px;
     background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
       url(/img/hero/tablet/background.png);
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      image-set(
+        '/img/hero/tablet/background.webp' type('image/webp'),
+        '/img/hero/tablet/background.png' type('image/png')
+      );
   }
-
-  /*--Описываем медиаправило для фонового изображения HERO-tablet--*/
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2ppx) and (min-width: 768px) {
-    .hero-content {
-      background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
-        url(/img/hero/tablet/background@2x.png);
-    }
+}
+/*--Описываем медиаправило для фонового изображения HERO-tablet--*/
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2ppx) {
+  .hero-content {
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      url(/img/hero/tablet/background@2x.png);
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      image-set(
+        '/img/hero/tablet/background@2x.png' type('image/png'),
+        '/img/hero/tablet/background@2x.webp' type('image/webp')
+      );
   }
 
   /*--Подзаголовок--*/
@@ -208,14 +227,14 @@
   .hero-btn1 {
     min-width: 144px;
     height: 45px;
-      }
+  }
 
   /*-----Кнопка-How it's made------*/
   .hero-btn2 {
     min-width: 183px;
     height: 45px;
     margin-left: 14px;
-      }
+  }
 
   /*-----Кнопка-Scroll------*/
   .hero-btn-scroll {
@@ -258,23 +277,30 @@
     padding-top: 381px;
     background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
       url(/img/hero/desktop/background.png);
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      image-set(
+        '/img/hero/desktop/background.webp' type('image/webp'),
+        '/img/hero/desktop/background.png' type('image/png')
+      );
   }
-
-  /*--Описываем медиаправило для фонового изображения HERO-desktop--*/
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2ppx) and (min-width: 1200px) {
-    .hero-content {
-      background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
-        url(/img/hero/desktop/background@2x.png);
-    }
+}
+/*--Описываем медиаправило для фонового изображения HERO-desktop--*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2ppx) and (min-width: 1200px) {
+  .hero-content {
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      url(/img/hero/desktop/background@2x.png);
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+      image-set(
+        '/img/hero/desktop/background@2x.png' type('image/png'),
+        '/img/hero/desktop/background@2x.webp' type('image/webp')
+      );
   }
 }
 
-
 /*--
 @media screen and (max-width: 375px) {--*/
-
 
 /*-----Кнопка-Buy now------*/
 /*--.hero-btn1 {
@@ -285,9 +311,9 @@
   line-height: 1.22;
   border: none;
   display: block;--*/
-  /*--width: 120px;
+/*--width: 120px;
   height: 41px;--*/
-  /*--margin-left: 0;
+/*--margin-left: 0;
   border-radius: 100px;
   transition: color 0.3s, background-color 0.3s;--*/
 /*--}
@@ -298,7 +324,7 @@
   height: 41px;
   /*--color: #fff;
   background-color: transparent;--*/
-  /*--font-weight: 600;
+/*--font-weight: 600;
   font-size: 14px;
   line-height: 1.22;
   border: 1px solid #fff;
@@ -314,7 +340,6 @@
 /*--}--*/
 
 /*--}--*/
-
 
 /*------------------------------------------*/
 
