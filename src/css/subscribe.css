@@ -5,6 +5,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/mobile/image.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/mobile/image.webp' type('image/webp'),
+        '/img/subscribe/mobile/image.png' type('image/png')
+      );
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -13,6 +18,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/mobile/image@2x.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/mobile/image@2x.png' type('image/png'),
+        '/img/subscribe/mobile/image@2x.webp' type('image/webp')
+      );
   }
 }
 /* TABLET */
@@ -20,6 +30,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/tablet/image.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/tablet/image.webp' type('image/webp'),
+        '/img/subscribe/tablet/image.png' type('image/png')
+      );
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -28,6 +43,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/tablet/image@2x.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/tablet/image@2x.png' type('image/png'),
+        '/img/subscribe/tablet/image@2x.webp' type('image/webp')
+      );
   }
 }
 /* DESCTOP */
@@ -35,6 +55,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/desktop/image.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/desktop/image.webp' type('image/webp'),
+        '/img/subscribe/desktop/image.png' type('image/png')
+      );
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -43,6 +68,11 @@
   .subscribe-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(/img/subscribe/desktop/image@2x.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      image-set(
+        '/img/subscribe/desktop/image@2x.png' type('image/png'),
+        '/img/subscribe/desktop/image@2x.webp' type('image/webp')
+      );
   }
 }
 
