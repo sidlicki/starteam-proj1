@@ -34,8 +34,8 @@
 .made-section-video-wrapper {
   position: relative;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(pastry-chef-preparing-chocolate-cake.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  /* url(pastry-chef-preparing-chocolate-cake.jpg); */
   border-radius: 15px;
 }
 
@@ -157,39 +157,37 @@
   color: var(--black-color);
 }
 
-
 /*===стилі для планшету===*/
 
-@media screen and (min-width: 768px){
-
-/*==планшет: розміри зображення==*/
+@media screen and (min-width: 768px) {
+  /*==планшет: розміри зображення==*/
   .made-section-img {
     max-width: 100%;
   }
 
-/*==планшет: розміри кнопки==*/
+  /*==планшет: розміри кнопки==*/
   .play-btn {
-  width: 44px;
-  height: 44px;
+    width: 44px;
+    height: 44px;
 
-  padding-top: 10px;
-  padding-bottom: 14px;
-  padding-left: 13px;
-  padding-right: 12px;
-}
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 13px;
+    padding-right: 12px;
+  }
 
   .play-btn-icon {
-  width: 20px;
-  height: 21px;
-}
+    width: 20px;
+    height: 21px;
+  }
 
-/*==планшет: розміри 
+  /*==планшет: розміри 
 для позиціонування заголовку==*/
-  .made-title-second{
+  .made-title-second {
     max-width: 350px;
   }
 
-/*==планшет: розміри для блоку із текстом==*/
+  /*==планшет: розміри для блоку із текстом==*/
   .made-section-description {
     max-width: 614px;
     padding-top: 32px;
@@ -198,7 +196,7 @@
     padding-right: 32px;
   }
 
-/*==планшет: відступ 
+  /*==планшет: відступ 
 для правильного позиціонування параграфів==*/
   .made-section-list {
     padding-right: 70px;
@@ -218,19 +216,19 @@
     max-width: 600px;
   }
   .made-section-description {
-    max-width: 516px; 
+    max-width: 516px;
   }
   .made-section-title {
     margin-bottom: 50px;
   }
-  .made-section-list{
+  .made-section-list {
     padding-right: 0;
     gap: 24px;
   }
-  .made-section-item{
+  .made-section-item {
     padding-right: 26px;
   }
-  .made-title-second{
+  .made-title-second {
     margin-bottom: 28px;
   }
 }
