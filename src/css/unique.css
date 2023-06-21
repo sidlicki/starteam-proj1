@@ -410,6 +410,9 @@
 }
 
 .unique-back-item-benefits {
+  /*  */
+  background-color: transparent;
+  /*  */
   display: inline-flex;
   border: 1px solid var(--orange-color);
   border-radius: 12px;
