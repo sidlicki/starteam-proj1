@@ -216,7 +216,7 @@
     background-image: url(/img/unique/mobile-tablet/chocolate.png);
     background-image: image-set(
       '/img/unique/mobile-tablet/chocolate.webp' type('image/webp'),
-      '/img/unique/mobile-tablet/chocolate.png' type('image/png')
+      /* '/img/unique/mobile-tablet/chocolate.png' type('image/png') */
     );
   }
 
@@ -224,7 +224,7 @@
     background-image: url(/img/unique/mobile-tablet/milk.png);
     background-image: image-set(
       '/img/unique/mobile-tablet/milk.webp' type('image/webp'),
-      '/img/unique/mobile-tablet/milk.png' type('image/png')
+      /* '/img/unique/mobile-tablet/milk.png' type('image/png') */
     );
   }
 
@@ -232,7 +232,7 @@
     background-image: url(/img/unique/mobile-tablet/hazelnuts.png);
     background-image: image-set(
       '/img/unique/mobile-tablet/hazelnuts.webp' type('image/webp'),
-      '/img/unique/mobile-tablet/hazelnuts.png' type('image/png')
+      /* '/img/unique/mobile-tablet/hazelnuts.png' type('image/png') */
     );
   }
 
@@ -240,7 +240,7 @@
     background-image: url(/img/unique/mobile-tablet/cocoa.png);
     background-image: image-set(
       '/img/unique/mobile-tablet/cocoa.webp' type('image/webp'),
-      '/img/unique/mobile-tablet/cocoa.png' type('image/png')
+      /* '/img/unique/mobile-tablet/cocoa.png' type('image/png') */
     );
   }
 }
@@ -251,32 +251,32 @@
   .unique-milk-chocolate > .unique-flip-card-inner {
     background-image: url(/img/unique/mobile-tablet/chocolate@2x.png);
     background-image: image-set(
-      '/img/unique/mobile-tablet/chocolate@2x.png' type('image/png'),
-      '/img/unique/mobile-tablet/chocolate@2x.webp' type('image/webp')
+      /* '/img/unique/mobile-tablet/chocolate@2x.png' type('image/png'), */
+        '/img/unique/mobile-tablet/chocolate@2x.webp' type('image/webp')
     );
   }
 
   .unique-milk > .unique-flip-card-inner {
     background-image: url(/img/unique/mobile-tablet/milk@2x.png);
     background-image: image-set(
-      '/img/unique/mobile-tablet/milk@2x.png' type('image/png'),
-      '/img/unique/mobile-tablet/milk@2x.webp' type('image/webp')
+      /* '/img/unique/mobile-tablet/milk@2x.png' type('image/png'), */
+        '/img/unique/mobile-tablet/milk@2x.webp' type('image/webp')
     );
   }
 
   .unique-nuts > .unique-flip-card-inner {
     background-image: url(/img/unique/mobile-tablet/hazelnuts@2x.png);
     background-image: image-set(
-      '/img/unique/mobile-tablet/hazelnuts@2x.png' type('image/png'),
-      '/img/unique/mobile-tablet/hazelnuts@2x.webp' type('image/webp')
+      /* '/img/unique/mobile-tablet/hazelnuts@2x.png' type('image/png'), */
+        '/img/unique/mobile-tablet/hazelnuts@2x.webp' type('image/webp')
     );
   }
 
   .unique-sweet-chocolate > .unique-flip-card-inner {
     background-image: url(/img/unique/mobile-tablet/cocoa@2x.png);
     background-image: image-set(
-      '/img/unique/mobile-tablet/cocoa@2x.png' type('image/png'),
-      '/img/unique/mobile-tablet/cocoa@2x.webp' type('image/webp')
+      /* '/img/unique/mobile-tablet/cocoa@2x.png' type('image/png'), */
+        '/img/unique/mobile-tablet/cocoa@2x.webp' type('image/webp')
     );
   }
 }
@@ -292,7 +292,7 @@
     background-image: url(/img/unique/desktop/chocolate.png);
     background-image: image-set(
       '/img/unique/desktop/chocolate.webp' type('image/webp'),
-      '/img/unique/desktop/chocolate.png' type('image/png')
+      /* '/img/unique/desktop/chocolate.png' type('image/png') */
     );
   }
 
@@ -300,7 +300,7 @@
     background-image: url(/img/unique/desktop/milk.png);
     background-image: image-set(
       '/img/unique/desktop/milk.webp' type('image/webp'),
-      '/img/unique/desktop/milk.png' type('image/png')
+      /* '/img/unique/desktop/milk.png' type('image/png') */
     );
   }
 
@@ -308,7 +308,7 @@
     background-image: url(/img/unique/desktop/hazelnuts.png);
     background-image: image-set(
       '/img/unique/desktop/hazelnuts.webp' type('image/webp'),
-      '/img/unique/desktop/hazelnuts.png' type('image/png')
+      /* '/img/unique/desktop/hazelnuts.png' type('image/png') */
     );
   }
 
@@ -316,7 +316,7 @@
     background-image: url(/img/unique/desktop/cocoa.png);
     background-image: image-set(
       '/img/unique/desktop/cocoa.webp' type('image/webp'),
-      '/img/unique/desktop/cocoa.png' type('image/png')
+      /* '/img/unique/desktop/cocoa.png' type('image/png') */
     );
   }
 }
@@ -327,32 +327,32 @@
   .unique-milk-chocolate > .unique-flip-card-inner {
     background-image: url(/img/unique/desktop/chocolate@2x.png);
     background-image: image-set(
-      '/img/unique/desktop/chocolate@2x.png' type('image/png'),
-      '/img/unique/desktop/chocolate@2x.webp' type('image/webp')
+      /* '/img/unique/desktop/chocolate@2x.png' type('image/png'), */
+        '/img/unique/desktop/chocolate@2x.webp' type('image/webp')
     );
   }
 
   .unique-milk > .unique-flip-card-inner {
     background-image: url(/img/unique/desktop/milk@2x.png);
     background-image: image-set(
-      '/img/unique/desktop/milk@2x.png' type('image/png'),
-      '/img/unique/desktop/milk@2x.webp' type('image/webp')
+      /* '/img/unique/desktop/milk@2x.png' type('image/png'), */ '/img/unique/desktop/milk@2x.webp'
+        type('image/webp')
     );
   }
 
   .unique-nuts > .unique-flip-card-inner {
     background-image: url(/img/unique/desktop/hazelnuts@2x.png);
     background-image: image-set(
-      '/img/unique/desktop/hazelnuts@2x.png' type('image/png'),
-      '/img/unique/desktop/hazelnuts@2x.webp' type('image/webp')
+      /* '/img/unique/desktop/hazelnuts@2x.png' type('image/png'), */
+        '/img/unique/desktop/hazelnuts@2x.webp' type('image/webp')
     );
   }
 
   .unique-sweet-chocolate > .unique-flip-card-inner {
     background-image: url(/img/unique/desktop/cocoa@2x.png);
     background-image: image-set(
-      '/img/unique/desktop/cocoa@2x.png' type('image/png'),
-      '/img/unique/desktop/cocoa@2x.webp' type('image/webp')
+      /* '/img/unique/desktop/cocoa@2x.png' type('image/png'), */
+        '/img/unique/desktop/cocoa@2x.webp' type('image/webp')
     );
   }
 }
