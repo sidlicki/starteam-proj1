@@ -400,147 +400,195 @@
 </section>
     <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -unique, щоб уникнути дублювання стилів -->
 <section class="unique-section" id="unique">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container unique-container">
-        <!-- починай писати свій код під цією лінією -->
-        <h3 class="section-title unique-section-title ">IT ALL ADDS UP TO ONE EXCEPTIONAL&nbsp;<span
-                class="span-orange">&nbsp;TASTE</span> SENSATION</h3>
-        <p class="unique-description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
-            details. From the sourcing of the
-            finest ingredients to the careful crafting of each individual piece, every step of our process adds up to
-            one
-            exceptional taste sensation.</p>
-        <ul class=" list unique-ingredients-list">
-            <li class="unique-ingredients-item unique-milk-chocolate">
-                <!-- ===========flip -->
-                <div class="unique-flip-card-inner">
-                    <div class="unique-ingredients-item-face">
-                        <h4>MILK CHOCOLATE</h4>
-                    </div>
-                    <div id="unique-choco-container" class="unique-ingredients-item-back">
-                        <div id="unique-benefits-choco-container" class="unique-prevent-padding-overflow">
-                            <h4 class="unique-item-back-title">Milk chocolate</h4>
-                            <button id="unique-back-item-choco-hide" class="unique-back-item-name"
-                                onclick="this.style='background-color: #fd9222;';
+  <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
+  <div class="container unique-container">
+    <!-- починай писати свій код під цією лінією -->
+    <h3 class="section-title unique-section-title">
+      IT ALL ADDS UP TO ONE EXCEPTIONAL&nbsp;<span class="span-orange">TASTE</span> SENSATION
+    </h3>
+    <p class="unique-description">
+      At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details.
+      From the sourcing of the finest ingredients to the careful crafting of each individual piece,
+      every step of our process adds up to one exceptional taste sensation.
+    </p>
+    <ul class="list unique-ingredients-list">
+      <li class="unique-ingredients-item unique-milk-chocolate">
+        <!-- ===========flip -->
+        <div class="unique-flip-card-inner">
+          <div class="unique-ingredients-item-face">
+            <h4>MILK CHOCOLATE</h4>
+          </div>
+          <div id="unique-choco-container" class="unique-ingredients-item-back">
+            <div id="unique-benefits-choco-container" class="unique-prevent-padding-overflow">
+              <h4 class="unique-item-back-title">Milk chocolate</h4>
+              <button
+                id="unique-back-item-choco-hide"
+                class="unique-back-item-name"
+                onclick="this.style='background-color: #fd9222;';
                                     document.getElementById('unique-benefits-choco-container').style='overflow: hidden;';
                                     document.getElementById('unique-back-item-choco-show').style='background-color: white; border: 1px solid #fd9222;';
                                     document.getElementById('unique-choco-container').style='height: 100%;'
-                            ">chocolate</button>
-                            <button id="unique-back-item-choco-show" type="button" class="unique-back-item-benefits" 
-                                onclick="document.getElementById('unique-benefits-choco-container').style='overflow: visible;'; 
+                            "
+              >
+                chocolate
+              </button>
+              <button
+                id="unique-back-item-choco-show"
+                type="button"
+                class="unique-back-item-benefits"
+                onclick="document.getElementById('unique-benefits-choco-container').style='overflow: visible;'; 
                                     this.style='background-color: #fd9222;';
                                     document.getElementById('unique-choco-container').style='height: auto;'
                                     document.getElementById('unique-back-item-choco-hide').style='background-color: white; border: 1px solid #fd9222;'
-                                    ">the benefits</button>
-                            <p class="unique-back-item-description">Milk chocolate is a solid chocolate confectionery containing
-                                cocoa, sugar and milk. It is the most consumed type of
-                                chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times.
-                                Although four-fifths of all
-                                milk chocolate is sold in the United States and Europe.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===========flip -->
-            </li>
-            <li class="unique-ingredients-item unique-milk">
-                <!-- ===========flip -->
-                <div class="unique-flip-card-inner">
-                    <div class="unique-ingredients-item-face">
-                        <h4>Milk</h4>
-                    </div>
-                    <div id="unique-milk-container" class="unique-ingredients-item-back">
-                        <div id="unique-benefits-milk-container" class="unique-prevent-padding-overflow">
-                            <h4 class="unique-item-back-title">Milk</h4>
-                            <button id="unique-back-item-milk-hide" class="unique-back-item-name" 
-                            onclick="this.style='background-color: #fd9222;';
+                                    "
+              >
+                the benefits
+              </button>
+              <p class="unique-back-item-description">
+                Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk.
+                It is the most consumed type of chocolate. Chocolate was originally sold and
+                consumed as a beverage in pre-Columbian times. Although four-fifths of all milk
+                chocolate is sold in the United States and Europe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========flip -->
+      </li>
+      <li class="unique-ingredients-item unique-milk">
+        <!-- ===========flip -->
+        <div class="unique-flip-card-inner">
+          <div class="unique-ingredients-item-face">
+            <h4>Milk</h4>
+          </div>
+          <div id="unique-milk-container" class="unique-ingredients-item-back">
+            <div id="unique-benefits-milk-container" class="unique-prevent-padding-overflow">
+              <h4 class="unique-item-back-title">Milk</h4>
+              <button
+                id="unique-back-item-milk-hide"
+                class="unique-back-item-name"
+                onclick="this.style='background-color: #fd9222;';
                                     document.getElementById('unique-benefits-milk-container').style='overflow: hidden;';
                                     document.getElementById('unique-back-item-milk-show').style='background-color: white; border: 1px solid #fd9222;';
                                     document.getElementById('unique-milk-container').style='height: 100%;'
-                            ">Milk</button>
-                            <button id="unique-back-item-milk-show" type="button" class="unique-back-item-benefits" 
-                                onclick="document.getElementById('unique-benefits-milk-container').style='overflow: visible;'; 
+                            "
+              >
+                Milk
+              </button>
+              <button
+                id="unique-back-item-milk-show"
+                type="button"
+                class="unique-back-item-benefits"
+                onclick="document.getElementById('unique-benefits-milk-container').style='overflow: visible;'; 
                                     this.style='background-color: #fd9222;';
                                     document.getElementById('unique-milk-container').style='height: auto;'
                                     document.getElementById('unique-back-item-milk-hide').style='background-color: white; border: 1px solid #fd9222;'
-                                    ">the benefits</button>
-                            <p class="unique-back-item-description">
-                                Milk is a white liquid food produced by the mammary glands of mammals. It is the
-                                primary source of nutrition for young mammals (including breastfed human infants) before they
-                                are able to digest
-                                solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen
-                                the immune system.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===========flip -->
-            </li>
-            <li class="unique-ingredients-item unique-nuts">
-                <!-- ===========flip -->
-                <div class="unique-flip-card-inner">
-                    <div class="unique-ingredients-item-face">
-                        <h4>NUTS</h4>
-                    </div>
-                    <div id="unique-nuts-container" class="unique-ingredients-item-back">
-                        <div id="unique-benefits-nuts-container" class="unique-prevent-padding-overflow">
-                            <h4 class="unique-item-back-title">nuts</h4>
-                            <button id="unique-back-item-nuts-hide" class="unique-back-item-name" 
-                                onclick="this.style='background-color: #fd9222;';
+                                    "
+              >
+                the benefits
+              </button>
+              <p class="unique-back-item-description">
+                Milk is a white liquid food produced by the mammary glands of mammals. It is the
+                primary source of nutrition for young mammals (including breastfed human infants)
+                before they are able to digest solid food.Early-lactation milk, which is called
+                colostrum, contains antibodies that strengthen the immune system.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========flip -->
+      </li>
+      <li class="unique-ingredients-item unique-nuts">
+        <!-- ===========flip -->
+        <div class="unique-flip-card-inner">
+          <div class="unique-ingredients-item-face">
+            <h4>NUTS</h4>
+          </div>
+          <div id="unique-nuts-container" class="unique-ingredients-item-back">
+            <div id="unique-benefits-nuts-container" class="unique-prevent-padding-overflow">
+              <h4 class="unique-item-back-title">nuts</h4>
+              <button
+                id="unique-back-item-nuts-hide"
+                class="unique-back-item-name"
+                onclick="this.style='background-color: #fd9222;';
                                     document.getElementById('unique-benefits-nuts-container').style='overflow: hidden;';
                                     document.getElementById('unique-back-item-nuts-show').style='background-color: white; border: 1px solid #fd9222;';
                                     document.getElementById('unique-nuts-container').style='height: 100%;'
-                            ">nuts</button>
-                            <button id="unique-back-item-nuts-show" type="button" class="unique-back-item-benefits" 
-                                onclick="document.getElementById('unique-benefits-nuts-container').style='overflow: visible'; 
+                            "
+              >
+                nuts
+              </button>
+              <button
+                id="unique-back-item-nuts-show"
+                type="button"
+                class="unique-back-item-benefits"
+                onclick="document.getElementById('unique-benefits-nuts-container').style='overflow: visible'; 
                                 this.style='background-color: #fd9222;';
                                 document.getElementById('unique-nuts-container').style='height: auto;'
                                 document.getElementById('unique-back-item-nuts-hide').style='background-color: white; border: 1px solid #fd9222;'
-                                ">the benefits</button>
-                            <p class="unique-back-item-description">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer
-                                benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy
-                                fats, and plant protein. Plus, they’re great on their own.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===========flip -->
-            </li>
-            <li class="unique-ingredients-item unique-sweet-chocolate">
-                <!-- ===========flip -->
-                <div class="unique-flip-card-inner">
-                    <div class="unique-ingredients-item-face">
-                        <h4>SEMI - SWEET CHOCOLATE</h4>
-                    </div>
-                    <div id="unique-sweet-container" class="unique-ingredients-item-back">
-                        <div id="unique-benefits-sweet-container" class="unique-prevent-padding-overflow">
-                            <h4 class="unique-item-back-title">semi - sweet chocolate</h4>
-                            <button id="unique-back-item-sweet-hide" class="unique-back-item-name"
-                                onclick="this.style='background-color: #fd9222;';
+                                "
+              >
+                the benefits
+              </button>
+              <p class="unique-back-item-description">
+                Almonds, pistachios, and walnuts are some types of nuts that contain healthy
+                nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer
+                benefits such as reducing your risk of heart disease. They’re a good source of
+                fiber, healthy fats, and plant protein. Plus, they’re great on their own.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========flip -->
+      </li>
+      <li class="unique-ingredients-item unique-sweet-chocolate">
+        <!-- ===========flip -->
+        <div class="unique-flip-card-inner">
+          <div class="unique-ingredients-item-face">
+            <h4>SEMI - SWEET CHOCOLATE</h4>
+          </div>
+          <div id="unique-sweet-container" class="unique-ingredients-item-back">
+            <div id="unique-benefits-sweet-container" class="unique-prevent-padding-overflow">
+              <h4 class="unique-item-back-title">semi - sweet chocolate</h4>
+              <button
+                id="unique-back-item-sweet-hide"
+                class="unique-back-item-name"
+                onclick="this.style='background-color: #fd9222;';
                                     document.getElementById('unique-benefits-sweet-container').style='overflow: hidden;';
                                     document.getElementById('unique-back-item-sweet-show').style='background-color: white; border: 1px solid #fd9222;';
                                     document.getElementById('unique-sweet-container').style='height: 100%;'
-                            ">sweet chocolate</button>
-                            <button id="unique-back-item-sweet-show" type="button" class="unique-back-item-benefits"  
-                                onclick="document.getElementById('unique-benefits-sweet-container').style='overflow: visible;'; 
+                            "
+              >
+                sweet chocolate
+              </button>
+              <button
+                id="unique-back-item-sweet-show"
+                type="button"
+                class="unique-back-item-benefits"
+                onclick="document.getElementById('unique-benefits-sweet-container').style='overflow: visible;'; 
                                 this.style='background-color: #fd9222;';
                                 document.getElementById('unique-sweet-container').style='height: auto;'
                                 document.getElementById('unique-back-item-sweet-hide').style='background-color: white; border: 1px solid #fd9222;'
-                                ">the benefits</button>
-                            <p class="unique-back-item-description">Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
-                                One of the best ways to gain an understanding of this type of chocolate is to compare it to a
-                                different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it
-                                has a slightly bitter taste whereas milk chocolate is sweeter.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===========flip -->
-            </li>
-        </ul>
-        <!-- твій код має бути вище цієї лінії -->
-    </div>
+                                "
+              >
+                the benefits
+              </button>
+              <p class="unique-back-item-description">
+                Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to
+                gain an understanding of this type of chocolate is to compare it to a different type
+                of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has
+                a slightly bitter taste whereas milk chocolate is sweeter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========flip -->
+      </li>
+    </ul>
+    <!-- твій код має бути вище цієї лінії -->
+  </div>
 </section>
+
     <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -made, щоб уникнути дублювання стилів -->
 <section class="made-section" id="made">
   <div class="container made-section-container">
@@ -724,62 +772,140 @@
 </section>
     <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -sellers, щоб уникнути дублювання стилів -->
 <section class="sellers-section" id="sellers">
-    <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
-    <div class="container">
-        <!-- починай писати свій код під цією лінією -->
-        <h2 class="sellers-name">TOP <span class="sellers-name-one">SELLERS</span></h2>
-        <ul class="sellers-list list">
-            <li class="sellers-list-item-one">
-                <picture class="sellers-img">
-                <!-- DESKTOP -->
-                <source srcset="/starteam-proj1/assets/img1-51b85578.png 1x, /starteam-proj1/assets/img1@2x-592f2fb3.png 2x"
-                    media="(min-width: 1200px)" />
-                <!-- TABLET -->
-                <source srcset="/starteam-proj1/assets/img1-461145ed.png 1x, /starteam-proj1/assets/img1@2x-639e5264.png 2x" media="(min-width: 768px)" />
-                <!-- MOBILE -->
-                <source srcset="/starteam-proj1/assets/img1-cfa07dbc.png 1x, /starteam-proj1/assets/img1@2x-7bd29185.png 2x" media="(min-width: 280px)" />
-                <img class="sellers-img" src="/starteam-proj1/assets/img1-51b85578.png" alt="img1">
-                </picture>
-            </li>
-            <li class="sellers-list-item-two">
-                <p class="info-sellers-sections">Crazy enough chocolate originates from a bean just like the
-        coffee bean called Cacao. Cacao has been around for
-        thousands of years and was first discovered by the Native
-        American tribe called the Mayans.</p>
-            </li>
-            <li class="sellers-list-item-tree">
-                <picture class="sellers-img">
-                <!-- DESKTOP -->
-                <source srcset="/starteam-proj1/assets/img2-6b16319a.png 1x, /starteam-proj1/assets/img2@2x-2d6691d6.png 2x"
-                    media="(min-width: 1200px)" />
-                <!-- TABLET -->
-                <source srcset="/starteam-proj1/assets/img2-67bce509.png 1x, /starteam-proj1/assets/img2@2x-38bf05a9.png 2x" media="(min-width: 768px)" />
-                <!-- MOBILE -->
-                <source srcset="/starteam-proj1/assets/img2-a75eaddd.png 1x, /starteam-proj1/assets/img2@2x-9e3aa1ec.png 2x" media="(min-width: 280px)" />
-                <img class="sellers-img" src="/starteam-proj1/assets/img2-6b16319a.png" alt="img2">
-                </picture>
-            </li>
-            <li class="sellers-list-item-four">
-                <picture class="sellers-img">
-                <!-- DESKTOP -->
-                <source srcset="/starteam-proj1/assets/img3-0478a2f6.png 1x, /starteam-proj1/assets/img3@2x-e78f92a2.png 2x"
-                    media="(min-width: 1200px)" />
-                <!-- TABLET -->
-                <source srcset="/img/sellers/tablet/img3.png 1x, /img/sellers/tablet/img2@3x.png 2x" media="(min-width: 768px)" />
-                <!-- MOBILE -->
-                <source srcset="/img/sellers/mobile/img3.png 1x, /img/sellers/mobile/img3@2x.png 2x" media="(min-width: 280px)" />
-                <img class="sellers-img" src="/starteam-proj1/assets/img3-0478a2f6.png" alt="img3">
-                </picture>
-            </li>
-            <li class="sellers-list-item-five">
-                <button class="open-sellers-btn js-open-modal" data-modal="1" type="button">Buy now</button>
-            </li>
-        </ul>
-        
-        <!-- твій код має бути вище цієї лінії -->
-    </div>
-</section>
+  <!-- розмір контейнера вже заданий в /reset.css для всіх пристроїв -->
+  <div class="container">
+    <!-- починай писати свій код під цією лінією -->
+    <h2 class="sellers-name">TOP <span class="sellers-name-one">SELLERS</span></h2>
+    <ul class="sellers-list list">
+      <li class="sellers-list-item-one">
+        <picture class="sellers-img">
+          <!-- DESKTOP -->
+          <source
+            srcset="/starteam-proj1/assets/img1-f17773a8.webp 1x, /starteam-proj1/assets/img1@2x-656ca250.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img1-51b85578.png 1x, /starteam-proj1/assets/img1@2x-592f2fb3.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <!-- TABLET -->
+          <source
+            srcset="/starteam-proj1/assets/img1-612404d7.webp 1x, /starteam-proj1/assets/img1@2x-53c933d4.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img1-461145ed.png 1x, /starteam-proj1/assets/img1@2x-639e5264.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <!-- MOBILE -->
+          <source
+            srcset="/starteam-proj1/assets/img1-e39d53f9.webp 1x, /starteam-proj1/assets/img1@2x-ef074a64.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img1-cfa07dbc.png 1x, /starteam-proj1/assets/img1@2x-7bd29185.png 2x"
+            type="image/png"
+            media="(min-width: 280px)"
+          />
+          <img class="sellers-img" src="/starteam-proj1/assets/img1-51b85578.png" alt="img1" />
+        </picture>
+      </li>
+      <li class="sellers-list-item-two">
+        <p class="info-sellers-sections">
+          Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+          Cacao has been around for thousands of years and was first discovered by the Native
+          American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="sellers-list-item-tree">
+        <picture class="sellers-img">
+          <!-- DESKTOP -->
+          <source
+            srcset="/starteam-proj1/assets/img2-e94bc6bf.webp 1x, /starteam-proj1/assets/img2@2x-44858104.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img2-6b16319a.png 1x, /starteam-proj1/assets/img2@2x-2d6691d6.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <!-- TABLET -->
+          <source
+            srcset="/starteam-proj1/assets/img2-797a2fa6.webp 1x, /starteam-proj1/assets/img2@2x-10acd423.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img2-67bce509.png 1x, /starteam-proj1/assets/img2@2x-38bf05a9.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <!-- MOBILE -->
+          <source
+            srcset="/starteam-proj1/assets/img2-8e4e3e05.webp 1x, /starteam-proj1/assets/img2@2x-db7b9a4d.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img2-a75eaddd.png 1x, /starteam-proj1/assets/img2@2x-9e3aa1ec.png 2x"
+            type="image/png"
+            media="(min-width: 280px)"
+          />
+          <img class="sellers-img" src="/starteam-proj1/assets/img2-6b16319a.png" alt="img2" />
+        </picture>
+      </li>
+      <li class="sellers-list-item-four">
+        <picture class="sellers-img">
+          <!-- DESKTOP -->
+          <source
+            srcset="/starteam-proj1/assets/img3-74822cfc.webp 1x, /starteam-proj1/assets/img3@2x-77cd4ea4.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/starteam-proj1/assets/img3-0478a2f6.png 1x, /starteam-proj1/assets/img3@2x-e78f92a2.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <!-- TABLET -->
+          <source
+            srcset="/img/sellers/tablet/img3.webp 1x, /img/sellers/tablet/img3@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/sellers/tablet/img3.png 1x, /img/sellers/tablet/img3@2x.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <!-- MOBILE -->
+          <source
+            srcset="/img/sellers/mobile/img3.webp 1x, /img/sellers/mobile/img3@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 280px)"
+          />
+          <source
+            srcset="/img/sellers/mobile/img3.png 1x, /img/sellers/mobile/img3@2x.png 2x"
+            type="image/png"
+            media="(min-width: 280px)"
+          />
+          <img class="sellers-img" src="/starteam-proj1/assets/img3-0478a2f6.png" alt="img3" />
+        </picture>
+      </li>
+      <li class="sellers-list-item-five">
+        <button class="open-sellers-btn js-open-modal" data-modal="1" type="button">Buy now</button>
+      </li>
+    </ul>
 
+    <!-- твій код має бути вище цієї лінії -->
+  </div>
+</section>
 
     <!-- прошу в усіх своїх классах, крім тих що прописані в /reset.css додавати приставку -reviews, щоб уникнути дублювання стилів -->
 <section class="reviews-section" id="reviews">
