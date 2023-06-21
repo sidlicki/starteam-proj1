@@ -197,9 +197,9 @@
   }
 }
 /*--Описываем медиаправило для фонового изображения HERO-tablet--*/
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2ppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2ppx) and (min-width: 768px) {
   .hero-content {
     background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
       url(/img/hero/tablet/background@2x.png);
