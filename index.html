@@ -1086,24 +1086,34 @@
     LEAVE A REWIEW ABOUT <span class="reviews-modal-name-two">OUR CHOCOLATE</span>
   </h2>
 
-  <form action="">
+  <form>
     <div>
-      <input type="text" class="reviews-contact-form-input" name="user-name" id="user-name" placeholder="Name" required
-        pattern="[a-zA-Z]+" />
+      <label>
+        <input type="text" class="reviews-contact-form-input" name="user-name" id="user-name-reviews" placeholder="Name"
+          required pattern="[a-zA-Z]+" />
+      </label>
     </div>
     <div>
-      <input type="email" class="reviews-contact-form-input" name="user-mail" id="user-name"
-        placeholder="Enter your email" required />
+      <label>
+        <input type="email" class="reviews-contact-form-input" name="user-mail" id="user-email-reviews"
+          placeholder="Enter your email" required />
+      </label>
     </div>
     <div class="reviews-modal-number">
-      <input type="text" class="reviews-contact-form-input-one" name="user-namber" id="user-name"
-        placeholder="Phone number" required pattern="[a-zA-Z]+" />
+      <label>
+        <input type="text" class="reviews-contact-form-input-one" name="user-namber" id="user-tel-reviews"
+          placeholder="Phone number" required pattern="[a-zA-Z]+" />
+      </label>
       <svg class="reviews-contact-icon" aria-label="icon name" width="18" height="24">
         <use href="/starteam-proj1/assets/sprite-840015d5.svg#icon-flag-ukraine"></use>
       </svg>
     </div>
     <div class="contact-texterea">
-      <textarea class="contact-form-comment" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
+      <label>
+        <textarea class="contact-form-comment" name="user-comment" id="user-comment-reviews"
+          placeholder="Enter text"></textarea>
+      </label>
+
     </div>
     <button type="submit" class="contact-form-submit">Send</button>
   </form>
