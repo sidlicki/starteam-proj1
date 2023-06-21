@@ -34,6 +34,7 @@
   letter-spacing: -0.02em;
   color: var(--white-color);
   cursor: pointer;
+  transition: color var(--transition-dur-and-time-func);
 }
 
 .contact-footer-link:hover,
@@ -48,6 +49,7 @@
   letter-spacing: -0.02em;
   color: var(--white-color);
   cursor: pointer;
+  transition: color var(--transition-dur-and-time-func);
 }
 
 .navigation-link:hover,
@@ -73,6 +75,7 @@
 .footer-svg {
   fill: transparent;
   stroke: var(--white-color);
+  transition: stroke var(--transition-dur-and-time-func);
 }
 
 .footer-svg:hover,

@@ -89,7 +89,7 @@
 /* Buttom */
 
 .reviews-open-btn {
-  background: transparent;
+  background-color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +104,12 @@
   color: var(--black-color);
   margin-left: auto;
   margin-right: auto;
+  transition: background-color var(--transition-dur-and-time-func), color var(--transition-dur-and-time-func);
 }
 .reviews-open-btn:hover,
 .reviews-open-btn:focus {
-  background: var(--orange-color);
-  color: #ffffff;
+  background-color: var(--orange-color);
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -165,6 +166,7 @@
   background: #fafafa;
   border-radius: 15px;
   padding: 32px 32px 32px 24px;
+  transition: transform var(--transition-dur-and-time-func), opacity var(--transition-dur-and-time-func);
 }
 
 .reviews-modal-btn {
@@ -181,13 +183,13 @@
   background-color: transparent;
 }
 .modal-close-icon {
-  stroke: #111111;
+  stroke: var(--black-color);
+  transition: stroke var(--transition-dur-and-time-func);
 }
 
 .reviews-modal-btn:hover .modal-close-icon,
 .reviews-modal-btn:focus .modal-close-icon {
-  border: none;
-  stroke: #f16529;
+  stroke: var(--orange-color);
 }
 
 .reviews-modal-name {
@@ -197,7 +199,7 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--black-color);
   margin-bottom: 32px;
 }
 
@@ -214,6 +216,7 @@
   border-radius: 8px;
   outline: transparent;
   margin-bottom: 16px;
+  transition: border-color var(--transition-dur-and-time-func);
 }
 .reviews-contact-form-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
@@ -235,6 +238,7 @@
   border-radius: 8px;
   outline: transparent;
   margin-bottom: 16px;
+  transition: border-color var(--transition-dur-and-time-func);
 }
 .reviews-contact-form-input-one::placeholder {
   color: rgba(64, 64, 64, 0.3);
@@ -275,7 +279,6 @@
   margin: auto;
   position: absolute;
 }
-
 .contact-form-comment {
   width: 263px;
   height: 91px;
@@ -291,6 +294,7 @@
   outline: transparent;
   resize: none;
   margin-bottom: 18px;
+  transition: border-color var(--transition-dur-and-time-func);
 }
 .contact-form-comment:focus {
   border-color: var(--orange-color);
@@ -306,18 +310,23 @@
   align-items: center;
   letter-spacing: -0.02em;
 }
-
 .contact-form-submit {
   width: 93px;
   height: 41px;
-  background: var(--orange-color);
+  background-color: var(--orange-color);
   border-radius: 100px;
   padding: 12px 28px;
   border: none;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--white-color);
+  transition: background-color var(--transition-dur-and-time-func), color var(--transition-dur-and-time-func);
+}
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  background-color: #FCF1E0;
+  color: var(--orange-color);
 }
 @media screen and (min-width: 768px) {
   .reviews-modal {

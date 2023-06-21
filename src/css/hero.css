@@ -72,7 +72,7 @@
 }
 
 /*-----Кнопка-Buy now------*/
-.hero-btn1 {
+.hero-btn-one {
   color: rgba(255, 255, 255, 1);
   background-color: var(--orange-color);
   font-weight: 600;
@@ -84,18 +84,18 @@
   height: 41px;
   margin-left: 0;
   border-radius: 100px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color var(--transition-dur-and-time-func), background-color var(--transition-dur-and-time-func);
 }
 
 /*--Меняем цвет кнопок при навeдении--*/
-.hero-btn1:hover,
-.hero-btn1:focus {
+.hero-btn-one:hover,
+.hero-btn-one:focus {
   color: var(--orange-color);
   background-color: #fcf1e0;
 }
 
 /*-----Кнопка-How it's made------*/
-.hero-btn2 {
+.hero-btn-two {
   color: #fff;
   background-color: transparent;
   font-weight: 600;
@@ -110,12 +110,12 @@
   padding-bottom: 12px;
   margin-left: auto;
   border-radius: 100px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color var(--transition-dur-and-time-func), background-color var(--transition-dur-and-time-func);
 }
 
 /*--Меняем цвет кнопок при навeдении--*/
-.hero-btn2:hover,
-.hero-btn2:focus {
+.hero-btn-two:hover,
+.hero-btn-two:focus {
   color: var(--orange-color);
   background-color: #e2e2e2;
   border-color: var(--orange-color);
@@ -138,7 +138,7 @@
   height: 28px;
   padding-left: 0;
   padding-right: 0;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color var(--transition-dur-and-time-func), background-color var(--transition-dur-and-time-func);
 }
 
 /*--Описываем контейнер иконки scroll--*/
@@ -151,6 +151,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #fff;
+  transition: background-color var(--transition-dur-and-time-func);
 }
 
 /*-----Описываем иконку-----*/
@@ -225,13 +226,13 @@
   }
 
   /*-----Кнопка-Buy now------*/
-  .hero-btn1 {
+  .hero-btn-one {
     min-width: 144px;
     height: 45px;
   }
 
   /*-----Кнопка-How it's made------*/
-  .hero-btn2 {
+  .hero-btn-two {
     min-width: 183px;
     height: 45px;
     margin-left: 14px;
@@ -317,7 +318,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   border-radius: 15px;
-  transition: transform 0.3s;
+  transition: transform var(--transition-dur-and-time-func), opacity var(--transition-dur-and-time-func);
 }
 
 /*--Описание кнопки закрытия модального окна--*/
@@ -333,15 +334,15 @@
   padding: 0;
   width: 24px;
   height: 24px;
-  transition: background-color 0.3s, border 0.3s;
+  transition: background-color var(--transition-dur-and-time-func), border var(--transition-dur-and-time-func);
 }
 
 /*-Описание иконки закрытия модального окна-*/
 .hero-modal-close-btn-icon {
   width: 24px;
   height: 24px;
-  stroke: #111;
-  transition: fill 0.3s;
+  stroke: var(--black-color);
+  transition: stroke var(--transition-dur-and-time-func);
 }
 
 /*--Меняем цвет иконки при ховере/фокусе модальной кнопки закрытия--*/
@@ -465,7 +466,7 @@
   border-radius: 8px;
   background-color: transparent;
   outline: transparent;
-  transition: border-color 0.3s;
+  transition: border-color var(--transition-dur-and-time-func);
   color: #404040;
 }
 
@@ -532,7 +533,7 @@
   border-radius: 8px;
   background-color: transparent;
   outline: transparent;
-  transition: border-color 0.3s;
+  transition: border-color var(--transition-dur-and-time-func);
 }
 
 /*--Меняем цвет рамки textarea при ховере и фокусе--*/
@@ -557,13 +558,13 @@
   font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.04em;
-  color: #fff;
-  transition: background-color 0.3s;
+  color: var(--white-color);
+  transition: background-color var(--transition-dur-and-time-func), color var(--transition-dur-and-time-func);
 }
 
 /*--Описываем ховер и фокус модальной кнопки--*/
-.hero-modal-btn:hover,
-.hero-modal-btn:focus {
+.hero-modal-buy-btn:hover,
+.hero-modal-buy-btn:focus {
   color: var(--orange-color);
   background-color: #fcf1e0;
 }
@@ -714,7 +715,7 @@
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    transition: border-color 0.3s;
+    transition: border-color var(--transition-dur-and-time-func);
   }
 
   /*--Кнопка Send модального окна--*/

@@ -79,12 +79,14 @@
   padding-right: 8px;
   width: 35px;
   height: 35px;
+  transition: border-color var(--transition-dur-and-time-func);
 }
 
 /*===селектор зі стилізацією кольору іконки
 кнопки,яка лежить на зображенні===*/
 .play-btn-icon {
   fill: var(--white-color);
+  transition: fill var(--transition-dur-and-time-func);
 }
 
 /*====ховери та фокуси для button===*/
@@ -93,8 +95,8 @@
   border-color: var(--orange-color);
 }
 
-.play-btn:hover .icon-play,
-.play-btn:focus .icon-play {
+.play-btn:hover .play-btn-icon,
+.play-btn:focus .play-btn-icon {
   fill: var(--orange-color);
 }
 
