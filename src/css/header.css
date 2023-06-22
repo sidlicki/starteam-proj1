@@ -16,12 +16,15 @@
   fill: #fcf1e0;
 }
 .header-logo-text {
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.03em;
   color: var(--black-color);
+}
+.span-header-font-italic {
+  font-style: italic;
 }
 .mobile-menu-open-btn {
   display: block;
