@@ -38,22 +38,23 @@
 /* ====================== */
 
 .unique-section-title {
-  min-width: 283px;
+  max-width: 283px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .unique-section-title {
+    max-width: unset;
     width: 411px;
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .unique-section-title {
     width: 486px;
   }
-}
+} */
 
 .unique-description {
   width: 100%;
