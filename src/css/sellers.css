@@ -108,6 +108,7 @@
   }
 
   .sellers-list-item-two {
+    margin-bottom: 0;
     order: 3;
   }
   .sellers-list-item-tree {
