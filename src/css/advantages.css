@@ -43,10 +43,10 @@
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
-.advantages-item:nth-child(1) .advantages-card-description,
+/* .advantages-item:nth-child(1) .advantages-card-description,
 .advantages-item:nth-child(3) .advantages-card-description {
   padding-bottom: 18px;
-}
+} */
 /* tablet */
 @media screen and (min-width: 768px) {
   .advantages-section {
