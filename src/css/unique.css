@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .unique-ingredients-item:not(:first-child) {
     margin-top: 20px;
   }

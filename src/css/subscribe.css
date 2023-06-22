@@ -110,8 +110,8 @@
 }
 .subscribe-opn-btn:hover,
 .subscribe-opn-btn:focus {
-    background: #fcf1e0;
-    color: var(--orange-color);
+  background: #fcf1e0;
+  color: var(--orange-color);
 }
 
 .subscribe-main-text {
@@ -137,7 +137,7 @@
     max-width: unset;
     width: 467px;
   }
-  
+
   .subscribe-opn-btn {
     width: 172px;
     height: 50px;
@@ -160,6 +160,7 @@
   background: #fafafa;
   border-radius: 15px;
   overflow: hidden;
+  transition: var(--transition-dur-and-time-func);
 }
 
 .subscribe-modal-cls-btn {
@@ -201,8 +202,8 @@
 }
 .subscribe-form-btn:hover,
 .subscribe-form-btn:focus {
-    background: #fcf1e0;
-    color: var(--orange-color);
+  background: #fcf1e0;
+  color: var(--orange-color);
 }
 .subscribe-form-email-input {
   outline: transparent;
